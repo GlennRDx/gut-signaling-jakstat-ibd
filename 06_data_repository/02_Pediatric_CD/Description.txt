@@ -1,0 +1,2 @@
+Single-cell transcriptomes isolated from terminal ileum of childhood onset Crohn’s disease and matched healthy controls. 
+This map includes total of 22,500 cells from 8 control samples and 7 Chron’s disease samples.
