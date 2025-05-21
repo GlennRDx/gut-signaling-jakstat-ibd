@@ -11,9 +11,24 @@ library(RColorBrewer)
 # Load Seurat object with single-cell RNA-seq data
 sobj <- readRDS('/home/glennrossdolan/Documents/gut-signaling-jakstat-ibd/06_data_repository/04_li/GSE266546.rds')
 
+# Create a new column in your Seurat object metadata called "CD_Status"
+sobj$CD_Status <- "Unknown"  # Initialize with a default value
+
+# Map the histology classifications to the new groups
+sobj$CD_Status[sobj$Histology == "Control"] <- "Control"
+
+# Active CD: mild, moderate, and severe
+sobj$CD_Status[sobj$Histology %in% c("Mild", "Moderate", "Severe")] <- "Active_CD"
+
+# Inactive CD: normal and quiescent
+sobj$CD_Status[sobj$Histology %in% c("Normal_CD", "Quiescent")] <- "Inactive_CD"
+
+# Verify the new annotation
+table(sobj$CD_Status)
+
 # Pseudobulk the counts based on condition-donor-celltype
 pseudo_sobj <- AggregateExpression(sobj, assays = "RNA", return.seurat = T, 
-                                   group.by = c("inferred.state", "Sample.name", "annotation_V2"))
+                                   group.by = c("CD_Status", "SampleID", "Celltypes"))
 
 # Get count data from pseudobulk object
 counts <- GetAssayData(pseudo_sobj, layer = "counts", assay = "RNA")
