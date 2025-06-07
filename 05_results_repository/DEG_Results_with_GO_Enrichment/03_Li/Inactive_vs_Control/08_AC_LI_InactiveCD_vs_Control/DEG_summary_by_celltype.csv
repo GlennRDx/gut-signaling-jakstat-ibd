@@ -1,0 +1,28 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count"
+"Mature Colonocyte",23,18,41,"08_AC_LI_InactiveCD_vs_Control","Control",16,"InactiveCD",39
+"Intermediate Colonocyte",18,20,38,"08_AC_LI_InactiveCD_vs_Control","Control",16,"InactiveCD",39
+"Stem",7,4,11,"08_AC_LI_InactiveCD_vs_Control","Control",16,"InactiveCD",39
+"Early Colonocyte",4,3,7,"08_AC_LI_InactiveCD_vs_Control","Control",15,"InactiveCD",36
+"Cycling TA",3,3,6,"08_AC_LI_InactiveCD_vs_Control","Control",15,"InactiveCD",39
+"Early Goblet",2,3,5,"08_AC_LI_InactiveCD_vs_Control","Control",16,"InactiveCD",39
+"Mature Goblet",0,3,3,"08_AC_LI_InactiveCD_vs_Control","Control",16,"InactiveCD",38
+"BEST4/OTOP2",0,2,2,"08_AC_LI_InactiveCD_vs_Control","Control",16,"InactiveCD",38
+"B",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",11,"InactiveCD",33
+"B Proliferating",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",8,"InactiveCD",23
+"EEC",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",12,"InactiveCD",34
+"Endo.",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",6,"InactiveCD",22
+"Goblet Proliferating",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",14,"InactiveCD",34
+"LND",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",3,"InactiveCD",20
+"NK",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",14,"InactiveCD",37
+"Plasma",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",12,"InactiveCD",33
+"Resident Macro.",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",10,"InactiveCD",27
+"T",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",13,"InactiveCD",38
+"T Proliferating",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",0,"InactiveCD",17
+"Tuft",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",15,"InactiveCD",35
+"Fibro.",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",7,"InactiveCD",16
+"Mast",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",8,"InactiveCD",33
+"Neutrophils",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",2,"InactiveCD",10
+"Recruited Macro.",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",4,"InactiveCD",20
+"ABCA8+ Fibro.",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",2,"InactiveCD",7
+"PDGFRA+ Fibro.",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",1,"InactiveCD",6
+"PDPN+ Fibro.",NA,NA,NA,"08_AC_LI_InactiveCD_vs_Control","Control",0,"InactiveCD",1

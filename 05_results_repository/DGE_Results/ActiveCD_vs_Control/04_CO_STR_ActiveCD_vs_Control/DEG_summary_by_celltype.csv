@@ -1,0 +1,18 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","STAT1_padj","STAT1_log2FC","STAT2_padj","STAT2_log2FC","SOCS1_padj","SOCS1_log2FC"
+"Fibroblasts ADAMDEC1",1616,495,2111,"04_CO_STR_ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.00449883960044563,"**1.145**",0.00407730767701237,"**2.194**",0.00372989251534417,"**1.468**",0.913692533492467,0.098
+"Endothelial cells CD36",1162,230,1392,"04_CO_STR_ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.0178115961954897,"**1.196**",0.196817329043962,"1.188",0.0063204236854235,"**1.566**",0.382078585500604,-0.647
+"Endothelial cells DARC",991,152,1143,"04_CO_STR_ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.00101773451882914,"**1.521**",0.0528664384866728,"1.69",0.0689453198137232,"1.739",0.110620607896979,-1.362
+"Fibroblasts SMOC2 PTGIS",857,191,1048,"04_CO_STR_ActiveCD_vs_Control","Control",16,"ActiveCD",4,0.00441046288465646,"**1.222**",0.00918075103510665,"**2.403**",0.000228068336663456,"**2.374**",0.0571195487043246,1.7
+"Fibroblasts NPY SLITRK6",326,58,384,"04_CO_STR_ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.0409308994295952,"**1.377**",0.296161212411736,"1.339",0.0520853295923549,"1.801",NA,NA
+"Glial cells",80,20,100,"04_CO_STR_ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.033496623534162,"**1.961**",0.467271873903748,"1.054",NA,NA,0.684403060313599,-0.888
+"Myofibroblasts HHIP NPNT",72,27,99,"04_CO_STR_ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.465898386351552,"0.787",0.0644467200403234,"2.182",0.218515824003058,"1.749",NA,NA
+"Activated fibroblasts CCL19 ADAMADEC1",NA,NA,NA,"04_CO_STR_ActiveCD_vs_Control","Control",16,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"Endothelial cells LTC4S SEMA3G",NA,NA,NA,"04_CO_STR_ActiveCD_vs_Control","Control",15,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"Fibroblasts KCNN3 LY6H",NA,NA,NA,"04_CO_STR_ActiveCD_vs_Control","Control",16,"ActiveCD",4,NA,NA,NA,NA,NA,NA,NA,NA
+"Fibroblasts SFRP2 SLPI",NA,NA,NA,"04_CO_STR_ActiveCD_vs_Control","Control",14,"ActiveCD",4,NA,NA,NA,NA,NA,NA,NA,NA
+"Inflammatory fibroblasts IL11 CHI3L1",NA,NA,NA,"04_CO_STR_ActiveCD_vs_Control","Control",9,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"Lymphatics",NA,NA,NA,"04_CO_STR_ActiveCD_vs_Control","Control",9,"ActiveCD",4,NA,NA,NA,NA,NA,NA,NA,NA
+"Myofibroblasts GREM1 GREM2",NA,NA,NA,"04_CO_STR_ActiveCD_vs_Control","Control",12,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"Pericytes HIGD1B STEAP4",NA,NA,NA,"04_CO_STR_ActiveCD_vs_Control","Control",15,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"Pericytes RERGL NTRK2",NA,NA,NA,"04_CO_STR_ActiveCD_vs_Control","Control",8,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"Stromal Cycling cells",NA,NA,NA,"04_CO_STR_ActiveCD_vs_Control","Control",8,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA

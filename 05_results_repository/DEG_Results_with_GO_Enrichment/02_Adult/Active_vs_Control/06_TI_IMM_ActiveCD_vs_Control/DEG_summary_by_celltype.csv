@@ -1,0 +1,29 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count"
+"Plasma cells",14,4,18,"06_TI_IMM_ActiveCD_vs_Control","Control",8,"ActiveCD",12
+"T cells CD4 IL17A",12,1,13,"06_TI_IMM_ActiveCD_vs_Control","Control",10,"ActiveCD",12
+"Tregs",9,1,10,"06_TI_IMM_ActiveCD_vs_Control","Control",9,"ActiveCD",12
+"Macrophages CCL3 CCL4",4,4,8,"06_TI_IMM_ActiveCD_vs_Control","Control",9,"ActiveCD",12
+"T cells CD8",6,0,6,"06_TI_IMM_ActiveCD_vs_Control","Control",10,"ActiveCD",12
+"Macrophages",4,0,4,"06_TI_IMM_ActiveCD_vs_Control","Control",8,"ActiveCD",12
+"T cells CD4 FOSB",2,1,3,"06_TI_IMM_ActiveCD_vs_Control","Control",10,"ActiveCD",12
+"DC2 CD1D",2,0,2,"06_TI_IMM_ActiveCD_vs_Control","Control",7,"ActiveCD",12
+"B cells",1,0,1,"06_TI_IMM_ActiveCD_vs_Control","Control",7,"ActiveCD",12
+"Macrophages LYVE1",1,0,1,"06_TI_IMM_ActiveCD_vs_Control","Control",7,"ActiveCD",12
+"Monocytes S100A8 S100A9",0,1,1,"06_TI_IMM_ActiveCD_vs_Control","Control",6,"ActiveCD",11
+"Cycling cells",0,0,0,"06_TI_IMM_ActiveCD_vs_Control","Control",9,"ActiveCD",12
+"DC1",0,0,0,"06_TI_IMM_ActiveCD_vs_Control","Control",8,"ActiveCD",12
+"Mast cells",0,0,0,"06_TI_IMM_ActiveCD_vs_Control","Control",7,"ActiveCD",12
+"T cells CD8 KLRG1",0,0,0,"06_TI_IMM_ActiveCD_vs_Control","Control",10,"ActiveCD",12
+"IELs ID3 ENTPD1",0,0,0,"06_TI_IMM_ActiveCD_vs_Control","Control",10,"ActiveCD",11
+"DC2 CD1D-",NA,NA,NA,"06_TI_IMM_ActiveCD_vs_Control","Control",8,"ActiveCD",12
+"ILCs",NA,NA,NA,"06_TI_IMM_ActiveCD_vs_Control","Control",9,"ActiveCD",12
+"Macrophages CXCL9 CXCL10",NA,NA,NA,"06_TI_IMM_ActiveCD_vs_Control","Control",4,"ActiveCD",11
+"Macrophages PLA2G2D",NA,NA,NA,"06_TI_IMM_ActiveCD_vs_Control","Control",6,"ActiveCD",10
+"Mature DCs",NA,NA,NA,"06_TI_IMM_ActiveCD_vs_Control","Control",7,"ActiveCD",12
+"Monocytes HBB",NA,NA,NA,"06_TI_IMM_ActiveCD_vs_Control","Control",2,"ActiveCD",6
+"Neutrophils S100A8 S100A9",NA,NA,NA,"06_TI_IMM_ActiveCD_vs_Control","Control",0,"ActiveCD",5
+"NK cells KLRF1 CD3G-",NA,NA,NA,"06_TI_IMM_ActiveCD_vs_Control","Control",10,"ActiveCD",12
+"T cells Naive CD4",NA,NA,NA,"06_TI_IMM_ActiveCD_vs_Control","Control",10,"ActiveCD",12
+"T cells OGT",NA,NA,NA,"06_TI_IMM_ActiveCD_vs_Control","Control",10,"ActiveCD",12
+"B cells AICDA LRMP",NA,NA,NA,"06_TI_IMM_ActiveCD_vs_Control","Control",7,"ActiveCD",6
+"Monocytes CHI3L1 CYP27A1",NA,NA,NA,"06_TI_IMM_ActiveCD_vs_Control","Control",5,"ActiveCD",6

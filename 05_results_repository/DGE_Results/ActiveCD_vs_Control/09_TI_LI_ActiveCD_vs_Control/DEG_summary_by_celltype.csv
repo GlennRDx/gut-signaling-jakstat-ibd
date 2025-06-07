@@ -1,0 +1,30 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","STAT1_padj","STAT1_log2FC","STAT2_padj","STAT2_log2FC","SOCS1_padj","SOCS1_log2FC"
+"LND",155,2149,2304,"09_TI_LI_ActiveCD_vs_Control","Control",9,"ActiveCD",24,0.0286713177628281,"**-1.339**",0.0622039853439671,"1.236",0.792428770729808,"-0.187",0.642146434910521,"0.534"
+"Early Enterocyte",691,824,1515,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",24,0.571538391333918,"-0.203",1.08603395615472e-12,"**1.64**",0.00992389175727872,"**0.617**",NA,NA
+"Cycling TA",630,542,1172,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",24,0.991521289649717,"-0.006",1.57754717019358e-09,"**1.485**",0.253937840562676,"0.368",0.00014989150152917,"**2.583**"
+"Intermediate Enterocyte",492,627,1119,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",24,0.244100889364425,"-0.372",2.12534271904056e-08,"**1.355**",0.0372950263267632,"**0.383**",NA,NA
+"Mature Goblet",262,547,809,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",24,0.905105013696933,"0.072",0.0152534120380055,"**0.804**",0.304842300233201,"0.329",9.65923156135226e-05,"**2.679**"
+"Mature Enterocyte",416,389,805,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",22,0.909333261884885,"0.059",7.84352687276549e-05,"**1.177**",0.454676764959569,"0.211",0.0170849745245313,"**1.769**"
+"Early Goblet",500,277,777,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",24,0.771036607640389,"0.148",0.000443417429227678,"**1.356**",0.380553443284292,"0.375",0.361676290468575,"1.004"
+"Stem",218,121,339,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",23,0.700832286759785,"-0.305",1.02741018240884e-06,"**1.903**",0.992019058341227,"0.013",NA,NA
+"Goblet Proliferating",137,102,239,"09_TI_LI_ActiveCD_vs_Control","Control",16,"ActiveCD",24,0.887294980203093,"0.17",0.0713450693083671,"0.976",0.853367142621369,"0.218",NA,NA
+"T",43,134,177,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",25,0.959549728243951,"-0.047",0.00113149418441172,"**1.224**",0.33524005101267,"0.562",0.130744680193761,"0.919"
+"Plasma",77,11,88,"09_TI_LI_ActiveCD_vs_Control","Control",8,"ActiveCD",21,NA,"0.088",0.0455308438860946,"**2.297**",0.456017341154631,"0.746",NA,NA
+"EEC",25,40,65,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",21,0.886171240750178,"-0.211",0.0619792505353539,"1.375",0.818108887043895,"0.345",NA,NA
+"B",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",10,"ActiveCD",24,NA,NA,NA,NA,NA,NA,NA,NA
+"BEST4/OTOP2",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",13,NA,NA,NA,NA,NA,NA,NA,NA
+"Mast",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",5,"ActiveCD",15,NA,NA,NA,NA,NA,NA,NA,NA
+"NK",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",23,NA,NA,NA,NA,NA,NA,NA,NA
+"Paneth",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",7,"ActiveCD",12,NA,NA,NA,NA,NA,NA,NA,NA
+"Resident Macro.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",23,NA,NA,NA,NA,NA,NA,NA,NA
+"T Proliferating",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",8,"ActiveCD",22,NA,NA,NA,NA,NA,NA,NA,NA
+"Tuft",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",14,"ActiveCD",11,NA,NA,NA,NA,NA,NA,NA,NA
+"Endo.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",12,"ActiveCD",23,NA,NA,NA,NA,NA,NA,NA,NA
+"Fibro.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",3,"ActiveCD",11,NA,NA,NA,NA,NA,NA,NA,NA
+"Neutrophils",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",2,"ActiveCD",19,NA,NA,NA,NA,NA,NA,NA,NA
+"Recruited Macro.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",2,"ActiveCD",16,NA,NA,NA,NA,NA,NA,NA,NA
+"B Proliferating",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",5,"ActiveCD",10,NA,NA,NA,NA,NA,NA,NA,NA
+"ABCA8+ Fibro.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",2,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"PDGFRA+ Fibro.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",0,"ActiveCD",8,NA,NA,NA,NA,NA,NA,NA,NA
+"PDPN+ Fibro.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",0,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"Plasma Proliferating",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",0,"ActiveCD",4,NA,NA,NA,NA,NA,NA,NA,NA

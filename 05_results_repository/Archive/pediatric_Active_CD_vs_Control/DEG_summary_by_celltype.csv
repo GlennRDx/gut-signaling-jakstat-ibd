@@ -1,0 +1,42 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count"
+"Activated B cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",6,"Active_CD",0
+"activated DC",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",3,"Active_CD",0
+"Activated T",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",7,"Active_CD",0
+"Arterial endothelial cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"B cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",6,"Active_CD",0
+"BEST4 enterocyte",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",7,"Active_CD",0
+"CD4 T cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",6,"Active_CD",0
+"CD8 T cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",7,"Active_CD",0
+"cDC1",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",6,"Active_CD",0
+"cDC2",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"crypt",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"Cycling B cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",6,"Active_CD",0
+"Cycling plasma cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",6,"Active_CD",0
+"early enterocyte",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"enterocyte",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"enteroendocrine",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"FCER2 B cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",5,"Active_CD",0
+"gd T/NK cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",7,"Active_CD",0
+"Goblet cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"IgA plasma cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"IgG plasma cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"IL2RG+ enterocyte (M cell)",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"Lymphatic endothelial cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",7,"Active_CD",0
+"mast cells",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",1,"Active_CD",0
+"Memory B cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",7,"Active_CD",0
+"Monocyte",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"myofibroblast",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"Paneth cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"pDC",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",2,"Active_CD",0
+"pericyte",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",7,"Active_CD",0
+"S1 fibroblasts",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"S2 fibroblasts",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"S4 fibroblasts",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"TA",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"Tfh",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",5,"Active_CD",0
+"Treg",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",6,"Active_CD",0
+"Venous endothelial cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"Cycling myeloid cells",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",6,"Active_CD",0
+"Glial cell",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",6,"Active_CD",0
+"Macrophage",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0
+"Tuft",NA,NA,NA,"pediatric_Active_CD_vs_Control","Control",8,"Active_CD",0

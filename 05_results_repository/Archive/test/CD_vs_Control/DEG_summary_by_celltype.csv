@@ -1,0 +1,42 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count"
+"Goblet cell",59,105,164,"CD_vs_Control","Control",8,"CD",5
+"early enterocyte",62,99,161,"CD_vs_Control","Control",8,"CD",4
+"IL2RG+ enterocyte (M cell)",100,55,155,"CD_vs_Control","Control",8,"CD",4
+"S4 fibroblasts",66,55,121,"CD_vs_Control","Control",8,"CD",5
+"crypt",64,49,113,"CD_vs_Control","Control",8,"CD",5
+"enterocyte",60,25,85,"CD_vs_Control","Control",8,"CD",3
+"TA",32,43,75,"CD_vs_Control","Control",8,"CD",5
+"S1 fibroblasts",40,31,71,"CD_vs_Control","Control",8,"CD",5
+"Activated T",35,7,42,"CD_vs_Control","Control",7,"CD",5
+"Cycling B cell",8,10,18,"CD_vs_Control","Control",6,"CD",4
+"FCER2 B cell",9,1,10,"CD_vs_Control","Control",5,"CD",4
+"S2 fibroblasts",5,3,8,"CD_vs_Control","Control",8,"CD",5
+"Monocyte",7,0,7,"CD_vs_Control","Control",8,"CD",5
+"gd T/NK cell",5,1,6,"CD_vs_Control","Control",7,"CD",5
+"myofibroblast",5,1,6,"CD_vs_Control","Control",8,"CD",5
+"Venous endothelial cell",3,3,6,"CD_vs_Control","Control",8,"CD",5
+"B cell",4,0,4,"CD_vs_Control","Control",6,"CD",4
+"CD4 T cell",2,0,2,"CD_vs_Control","Control",6,"CD",5
+"cDC2",2,0,2,"CD_vs_Control","Control",8,"CD",5
+"Paneth cell",2,0,2,"CD_vs_Control","Control",8,"CD",4
+"Macrophage",1,1,2,"CD_vs_Control","Control",8,"CD",4
+"IgA plasma cell",1,0,1,"CD_vs_Control","Control",8,"CD",5
+"Memory B cell",1,0,1,"CD_vs_Control","Control",7,"CD",5
+"Arterial endothelial cell",0,0,0,"CD_vs_Control","Control",8,"CD",5
+"BEST4 enterocyte",0,0,0,"CD_vs_Control","Control",7,"CD",4
+"IgG plasma cell",0,0,0,"CD_vs_Control","Control",8,"CD",5
+"Activated B cell",NA,NA,NA,"CD_vs_Control","Control",6,"CD",5
+"activated DC",NA,NA,NA,"CD_vs_Control","Control",3,"CD",4
+"CD8 T cell",NA,NA,NA,"CD_vs_Control","Control",7,"CD",4
+"cDC1",NA,NA,NA,"CD_vs_Control","Control",6,"CD",4
+"Cycling plasma cell",NA,NA,NA,"CD_vs_Control","Control",6,"CD",4
+"enteroendocrine",NA,NA,NA,"CD_vs_Control","Control",8,"CD",5
+"Lymphatic endothelial cell",NA,NA,NA,"CD_vs_Control","Control",7,"CD",4
+"mast cells",NA,NA,NA,"CD_vs_Control","Control",1,"CD",4
+"pDC",NA,NA,NA,"CD_vs_Control","Control",2,"CD",2
+"pericyte",NA,NA,NA,"CD_vs_Control","Control",7,"CD",5
+"Tfh",NA,NA,NA,"CD_vs_Control","Control",5,"CD",5
+"Treg",NA,NA,NA,"CD_vs_Control","Control",6,"CD",3
+"Cycling myeloid cells",NA,NA,NA,"CD_vs_Control","Control",6,"CD",4
+"Glial cell",NA,NA,NA,"CD_vs_Control","Control",6,"CD",3
+"Tuft",NA,NA,NA,"CD_vs_Control","Control",8,"CD",2

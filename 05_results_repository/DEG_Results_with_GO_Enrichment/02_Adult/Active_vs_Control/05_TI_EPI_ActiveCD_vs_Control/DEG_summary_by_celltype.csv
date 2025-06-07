@@ -1,0 +1,18 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count"
+"Enterocytes TMIGD1 MEP1A",645,132,777,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",12
+"Stem cells OLFM4 GSTA1",192,101,293,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",11
+"Stem cells OLFM4 LGR5",158,63,221,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",11
+"Goblet cells MUC2 TFF1",163,30,193,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",11
+"Epithelial Cycling cells",121,37,158,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",11
+"Goblet cells MUC2 TFF1-",107,22,129,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",11
+"Stem cells OLFM4 PCNA",80,38,118,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",12
+"Paneth cells",25,4,29,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",11
+"Stem cells OLFM4",16,5,21,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",12
+"Enterocytes BEST4",5,2,7,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",11
+"L cells",5,0,5,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",11
+"Enterochromaffin cells",NA,NA,NA,"05_TI_EPI_ActiveCD_vs_Control","Control",9,"ActiveCD",9
+"Enterocytes TMIGD1 MEP1A GSTA1",NA,NA,NA,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",9
+"Epithelial cells METTL12 MAFB",NA,NA,NA,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",11
+"Epithelial HBB HBA",NA,NA,NA,"05_TI_EPI_ActiveCD_vs_Control","Control",6,"ActiveCD",9
+"Goblet cells SPINK4",NA,NA,NA,"05_TI_EPI_ActiveCD_vs_Control","Control",9,"ActiveCD",10
+"Tuft cells",NA,NA,NA,"05_TI_EPI_ActiveCD_vs_Control","Control",10,"ActiveCD",9

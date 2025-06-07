@@ -1,0 +1,18 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","STAT1_padj","STAT1_log2FC","STAT2_padj","STAT2_log2FC","SOCS1_padj","SOCS1_log2FC"
+"Enterocytes TMIGD1 MEP1A",206,68,274,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.559527288702601,0.177,0.280817051737669,0.57,0.406776319649547,0.304,0.831584462717875,0.201
+"Paneth cells",6,75,81,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.974256109140886,-0.028,0.84367318365753,-0.189,0.30616733525057,-0.592,0.811687742934255,-0.268
+"Goblet cells MUC2 TFF1",25,24,49,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.693920000516716,0.161,0.695377568489305,0.332,0.612274822135211,0.304,0.627358334349513,-0.536
+"Stem cells OLFM4 PCNA",9,19,28,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.785009880282603,-0.231,0.957963406322897,0.13,0.842539163798073,-0.392,NA,-0.522
+"Goblet cells MUC2 TFF1-",5,13,18,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.965167603279988,-0.076,0.911287742007116,0.204,0.911152700936261,0.221,NA,-0.063
+"Stem cells OLFM4 LGR5",6,9,15,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.705849860133966,-0.215,0.903201335889649,0.218,0.892068507853894,-0.21,0.819726833116336,-0.46
+"L cells",3,5,8,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.997180446580726,-0.011,NA,0.168,NA,NA,NA,-1.177
+"Enterocytes TMIGD1 MEP1A GSTA1",6,1,7,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,NA,0.138,NA,0.776,NA,NA,NA,NA
+"Stem cells OLFM4 GSTA1",6,1,7,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.998968099686162,-0.156,0.998968099686162,0.246,0.998968099686162,0.246,NA,-0.028
+"Tuft cells",0,6,6,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",25,0.984950828095345,0.313,0.984950828095345,0.224,NA,-0.458,NA,NA
+"Enterocytes BEST4",0,4,4,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.998966171932639,0.046,0.998966171932639,0.464,0.998966171932639,0.241,NA,NA
+"Epithelial Cycling cells",2,2,4,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.985849197653307,-0.042,0.859012893737133,0.238,0.989508391872694,-0.026,0.984522311773369,-0.146
+"Stem cells OLFM4",0,4,4,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.965326880681035,-0.382,0.990657848521303,0.431,0.990657848521303,-0.351,0.990657848521303,-0.427
+"Enterochromaffin cells",0,2,2,"05_TI_EPI_InactiveCD_vs_Control","Control",9,"InactiveCD",24,NA,-0.214,NA,0.236,NA,-0.05,NA,-0.472
+"Epithelial cells METTL12 MAFB",0,1,1,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26,NA,NA,0.996283052181598,0.592,0.996283052181598,0.162,0.996283052181598,-0.943
+"Epithelial HBB HBA",NA,NA,NA,"05_TI_EPI_InactiveCD_vs_Control","Control",6,"InactiveCD",18,NA,NA,NA,NA,NA,NA,NA,NA
+"Goblet cells SPINK4",NA,NA,NA,"05_TI_EPI_InactiveCD_vs_Control","Control",9,"InactiveCD",26,NA,NA,NA,NA,NA,NA,NA,NA

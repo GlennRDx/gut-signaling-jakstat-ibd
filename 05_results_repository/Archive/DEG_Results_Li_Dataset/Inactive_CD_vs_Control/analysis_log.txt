@@ -1,0 +1,12 @@
+=== INACTIVE CD vs CONTROL ANALYSIS LOG ===
+Generated on: 2025-05-27 18:02:36.737166
+
+Failed analyses:
+T Proliferating: Missing conditions - Control
+Neutrophils: Insufficient samples per group (need >=3 per group)
+ABCA8+ Fibro.: Insufficient samples per group (need >=3 per group)
+PDGFRA+ Fibro.: Insufficient samples per group (need >=3 per group)
+PDPN+ Fibro.: Missing conditions - Control
+
+Total failed: 5
+Total attempted: 27

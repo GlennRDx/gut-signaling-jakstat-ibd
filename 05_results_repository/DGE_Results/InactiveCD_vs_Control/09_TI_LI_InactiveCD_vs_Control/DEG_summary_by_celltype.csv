@@ -1,0 +1,30 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","STAT1_padj","STAT1_log2FC","STAT2_padj","STAT2_log2FC","SOCS1_padj","SOCS1_log2FC"
+"Intermediate Enterocyte",25,3,28,"09_TI_LI_InactiveCD_vs_Control","Control",17,"InactiveCD",32,0.901032735098791,-0.208,0.901032735098791,0.218,0.945598815187466,0.125,0.895430021218565,0.548
+"Early Enterocyte",18,5,23,"09_TI_LI_InactiveCD_vs_Control","Control",17,"InactiveCD",32,0.976947547173023,-0.067,0.516282478431575,0.4,0.94918939671063,0.11,NA,NA
+"Mature Enterocyte",18,2,20,"09_TI_LI_InactiveCD_vs_Control","Control",17,"InactiveCD",32,0.999909935701365,0,0.998706907285701,-0.011,0.998706907285701,0.047,NA,0.669
+"Cycling TA",7,4,11,"09_TI_LI_InactiveCD_vs_Control","Control",17,"InactiveCD",32,0.996938813238244,-0.12,0.996938813238244,0.221,0.996938813238244,-0.142,NA,NA
+"Mature Goblet",7,0,7,"09_TI_LI_InactiveCD_vs_Control","Control",17,"InactiveCD",31,0.998105638010951,-0.035,0.958128145837889,-0.224,0.998823006578251,-0.015,NA,NA
+"Early Goblet",3,1,4,"09_TI_LI_InactiveCD_vs_Control","Control",17,"InactiveCD",32,NA,-0.157,NA,0.198,NA,0.164,NA,NA
+"T",0,2,2,"09_TI_LI_InactiveCD_vs_Control","Control",17,"InactiveCD",32,0.995308281966203,0.149,0.995308281966203,0.402,0.995308281966203,-0.178,0.995308281966203,0.04
+"Stem",1,0,1,"09_TI_LI_InactiveCD_vs_Control","Control",17,"InactiveCD",32,0.993322029011417,-0.241,0.993322029011417,0.261,0.998519041870034,-0.007,NA,NA
+"B",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",10,"InactiveCD",24,NA,NA,NA,NA,NA,NA,NA,NA
+"BEST4/OTOP2",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",17,"InactiveCD",31,NA,NA,NA,NA,NA,NA,NA,NA
+"EEC",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",17,"InactiveCD",29,NA,NA,NA,NA,NA,NA,NA,NA
+"Goblet Proliferating",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",16,"InactiveCD",32,NA,NA,NA,NA,NA,NA,NA,NA
+"LND",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",9,"InactiveCD",26,NA,NA,NA,NA,NA,NA,NA,NA
+"Mast",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",5,"InactiveCD",19,NA,NA,NA,NA,NA,NA,NA,NA
+"NK",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",17,"InactiveCD",31,NA,NA,NA,NA,NA,NA,NA,NA
+"Paneth",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",7,"InactiveCD",19,NA,NA,NA,NA,NA,NA,NA,NA
+"Resident Macro.",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",17,"InactiveCD",29,NA,NA,NA,NA,NA,NA,NA,NA
+"T Proliferating",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",8,"InactiveCD",18,NA,NA,NA,NA,NA,NA,NA,NA
+"Tuft",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",14,"InactiveCD",29,NA,NA,NA,NA,NA,NA,NA,NA
+"Endo.",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",12,"InactiveCD",19,NA,NA,NA,NA,NA,NA,NA,NA
+"Fibro.",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",3,"InactiveCD",7,NA,NA,NA,NA,NA,NA,NA,NA
+"Neutrophils",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",2,"InactiveCD",1,NA,NA,NA,NA,NA,NA,NA,NA
+"Plasma",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",8,"InactiveCD",23,NA,NA,NA,NA,NA,NA,NA,NA
+"Recruited Macro.",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",2,"InactiveCD",2,NA,NA,NA,NA,NA,NA,NA,NA
+"B Proliferating",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",5,"InactiveCD",9,NA,NA,NA,NA,NA,NA,NA,NA
+"ABCA8+ Fibro.",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",2,"InactiveCD",2,NA,NA,NA,NA,NA,NA,NA,NA
+"PDGFRA+ Fibro.",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",0,"InactiveCD",2,NA,NA,NA,NA,NA,NA,NA,NA
+"PDPN+ Fibro.",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",0,"InactiveCD",0,NA,NA,NA,NA,NA,NA,NA,NA
+"Plasma Proliferating",NA,NA,NA,"09_TI_LI_InactiveCD_vs_Control","Control",0,"InactiveCD",1,NA,NA,NA,NA,NA,NA,NA,NA

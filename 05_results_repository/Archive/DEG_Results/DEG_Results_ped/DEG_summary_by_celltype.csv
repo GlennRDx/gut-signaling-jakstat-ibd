@@ -1,0 +1,42 @@
+"cell_type","CD_vs_Control_up","CD_vs_Control_down","nonInflamed_vs_Control_up","nonInflamed_vs_Control_down"
+"Activated B cell",NA,NA,8,3
+"activated DC",NA,NA,NA,NA
+"Activated T",35,7,NA,NA
+"Arterial endothelial cell",0,0,2,0
+"B cell",4,0,0,0
+"BEST4 enterocyte",0,0,0,0
+"CD4 T cell",2,0,0,0
+"CD8 T cell",NA,NA,0,0
+"cDC1",NA,NA,NA,NA
+"cDC2",2,0,0,0
+"crypt",64,49,2,0
+"Cycling B cell",8,10,0,0
+"Cycling plasma cell",NA,NA,NA,NA
+"early enterocyte",62,99,1,0
+"enterocyte",60,25,8,8
+"enteroendocrine",NA,NA,NA,NA
+"FCER2 B cell",9,1,0,0
+"gd T/NK cell",5,1,0,0
+"Goblet cell",59,105,1,0
+"IgA plasma cell",1,0,1,0
+"IgG plasma cell",0,0,2,0
+"IL2RG+ enterocyte (M cell)",100,55,4,4
+"Lymphatic endothelial cell",NA,NA,NA,NA
+"mast cells",NA,NA,NA,NA
+"Memory B cell",1,0,0,0
+"Monocyte",7,0,2,0
+"myofibroblast",5,1,NA,NA
+"Paneth cell",2,0,0,0
+"pDC",NA,NA,NA,NA
+"pericyte",NA,NA,NA,NA
+"S1 fibroblasts",40,31,7,0
+"S2 fibroblasts",5,3,0,0
+"S4 fibroblasts",66,55,2,5
+"TA",32,43,0,0
+"Tfh",NA,NA,NA,NA
+"Treg",NA,NA,NA,NA
+"Venous endothelial cell",3,3,NA,NA
+"Cycling myeloid cells",NA,NA,NA,NA
+"Glial cell",NA,NA,NA,NA
+"Macrophage",1,1,0,0
+"Tuft",NA,NA,NA,NA
