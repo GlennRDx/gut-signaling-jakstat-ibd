@@ -1,0 +1,17 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count"
+"Glial cells",25,1,26,"07_TI_STR_InactiveCD_vs_Control","Control",6,"InactiveCD",25
+"Fibroblasts ADAMDEC1",17,5,22,"07_TI_STR_InactiveCD_vs_Control","Control",8,"InactiveCD",26
+"Lymphatics",3,0,3,"07_TI_STR_InactiveCD_vs_Control","Control",4,"InactiveCD",26
+"Endothelial cells CA4 CD36",1,1,2,"07_TI_STR_InactiveCD_vs_Control","Control",7,"InactiveCD",25
+"Fibroblasts SMOC2 PTGIS",0,1,1,"07_TI_STR_InactiveCD_vs_Control","Control",6,"InactiveCD",25
+"Endothelial cells CD36",0,0,0,"07_TI_STR_InactiveCD_vs_Control","Control",7,"InactiveCD",26
+"Endothelial cells DARC",0,0,0,"07_TI_STR_InactiveCD_vs_Control","Control",7,"InactiveCD",26
+"Activated fibroblasts CCL19 ADAMADEC1",0,0,0,"07_TI_STR_InactiveCD_vs_Control","Control",5,"InactiveCD",22
+"Fibroblasts NPY SLITRK6",0,0,0,"07_TI_STR_InactiveCD_vs_Control","Control",5,"InactiveCD",24
+"Myofibroblasts HHIP NPNT",0,0,0,"07_TI_STR_InactiveCD_vs_Control","Control",6,"InactiveCD",25
+"Endothelial cells LTC4S SEMA3G",NA,NA,NA,"07_TI_STR_InactiveCD_vs_Control","Control",6,"InactiveCD",24
+"Myofibroblasts GREM1 GREM2",NA,NA,NA,"07_TI_STR_InactiveCD_vs_Control","Control",5,"InactiveCD",25
+"Pericytes HIGD1B STEAP4",NA,NA,NA,"07_TI_STR_InactiveCD_vs_Control","Control",6,"InactiveCD",26
+"Fibroblasts KCNN3 LY6H",NA,NA,NA,"07_TI_STR_InactiveCD_vs_Control","Control",4,"InactiveCD",23
+"Fibroblasts SFRP2 SLPI",NA,NA,NA,"07_TI_STR_InactiveCD_vs_Control","Control",4,"InactiveCD",24
+"Pericytes RERGL NTRK2",NA,NA,NA,"07_TI_STR_InactiveCD_vs_Control","Control",5,"InactiveCD",22

@@ -1,2 +1,0 @@
-"ID","Description","setSize","enrichmentScore","NES","pvalue","p.adjust","qvalue","rank","leading_edge","core_enrichment","direction","ont","gene_ratio","gene_count","cluster"
-"GO:1903573","negative regulation of response to endoplasmic reticulum stress",10,-0.874045674255218,-2.03985327463417,1.43656030398947e-05,0.0275101298213983,0.0272946457757999,72,"tags=50%, list=5%, signal=48%","11315/51035/23645/9709/3303","Down","BP",0.00679809653297077,10,1

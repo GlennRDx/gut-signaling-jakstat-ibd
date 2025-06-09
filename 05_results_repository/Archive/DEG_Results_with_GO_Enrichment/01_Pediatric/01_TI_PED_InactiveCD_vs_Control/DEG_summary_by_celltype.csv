@@ -1,0 +1,42 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count"
+"enterocyte",8,8,16,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"Activated B cell",8,3,11,"01_TI_PED_InactiveCD_vs_Control","Control",6,"InactiveCD",2
+"IL2RG+ enterocyte (M cell)",4,4,8,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",1
+"S1 fibroblasts",7,0,7,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"S4 fibroblasts",2,5,7,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"Arterial endothelial cell",2,0,2,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"crypt",2,0,2,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"IgG plasma cell",2,0,2,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"Monocyte",2,0,2,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"early enterocyte",1,0,1,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"Goblet cell",1,0,1,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"IgA plasma cell",1,0,1,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"B cell",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",6,"InactiveCD",1
+"BEST4 enterocyte",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",7,"InactiveCD",2
+"CD4 T cell",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",6,"InactiveCD",2
+"CD8 T cell",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",7,"InactiveCD",2
+"cDC2",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"Cycling B cell",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",6,"InactiveCD",2
+"FCER2 B cell",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",5,"InactiveCD",2
+"gd T/NK cell",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",7,"InactiveCD",2
+"Memory B cell",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",7,"InactiveCD",2
+"Paneth cell",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"S2 fibroblasts",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"TA",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"Macrophage",0,0,0,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"activated DC",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",3,"InactiveCD",1
+"Activated T",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",7,"InactiveCD",2
+"cDC1",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",6,"InactiveCD",2
+"Cycling plasma cell",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",6,"InactiveCD",2
+"enteroendocrine",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"Lymphatic endothelial cell",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",7,"InactiveCD",2
+"mast cells",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",1,"InactiveCD",2
+"myofibroblast",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"pDC",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",2,"InactiveCD",1
+"pericyte",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",7,"InactiveCD",2
+"Tfh",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",5,"InactiveCD",2
+"Treg",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",6,"InactiveCD",2
+"Venous endothelial cell",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2
+"Cycling myeloid cells",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",6,"InactiveCD",2
+"Glial cell",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",6,"InactiveCD",1
+"Tuft",NA,NA,NA,"01_TI_PED_InactiveCD_vs_Control","Control",8,"InactiveCD",2

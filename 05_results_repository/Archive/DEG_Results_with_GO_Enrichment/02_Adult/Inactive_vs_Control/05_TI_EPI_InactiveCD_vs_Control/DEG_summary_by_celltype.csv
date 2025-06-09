@@ -1,0 +1,18 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count"
+"Enterocytes TMIGD1 MEP1A",206,68,274,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"Paneth cells",6,75,81,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"Goblet cells MUC2 TFF1",25,24,49,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"Stem cells OLFM4 PCNA",9,19,28,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"Goblet cells MUC2 TFF1-",5,13,18,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"Stem cells OLFM4 LGR5",6,9,15,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"L cells",3,5,8,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"Enterocytes TMIGD1 MEP1A GSTA1",6,1,7,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"Stem cells OLFM4 GSTA1",6,1,7,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"Tuft cells",0,6,6,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",25
+"Enterocytes BEST4",0,4,4,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"Epithelial Cycling cells",2,2,4,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"Stem cells OLFM4",0,4,4,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"Enterochromaffin cells",0,2,2,"05_TI_EPI_InactiveCD_vs_Control","Control",9,"InactiveCD",24
+"Epithelial cells METTL12 MAFB",0,1,1,"05_TI_EPI_InactiveCD_vs_Control","Control",10,"InactiveCD",26
+"Epithelial HBB HBA",NA,NA,NA,"05_TI_EPI_InactiveCD_vs_Control","Control",6,"InactiveCD",18
+"Goblet cells SPINK4",NA,NA,NA,"05_TI_EPI_InactiveCD_vs_Control","Control",9,"InactiveCD",26

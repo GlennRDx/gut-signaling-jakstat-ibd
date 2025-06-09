@@ -1,0 +1,30 @@
+"cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count"
+"LND",155,2149,2304,"09_TI_LI_ActiveCD_vs_Control","Control",9,"ActiveCD",24
+"Early Enterocyte",691,824,1515,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",24
+"Cycling TA",630,542,1172,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",24
+"Intermediate Enterocyte",492,627,1119,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",24
+"Mature Goblet",262,547,809,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",24
+"Mature Enterocyte",416,389,805,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",22
+"Early Goblet",500,277,777,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",24
+"Stem",218,121,339,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",23
+"Goblet Proliferating",137,102,239,"09_TI_LI_ActiveCD_vs_Control","Control",16,"ActiveCD",24
+"T",43,134,177,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",25
+"Plasma",77,11,88,"09_TI_LI_ActiveCD_vs_Control","Control",8,"ActiveCD",21
+"EEC",25,40,65,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",21
+"B",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",10,"ActiveCD",24
+"BEST4/OTOP2",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",13
+"Mast",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",5,"ActiveCD",15
+"NK",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",23
+"Paneth",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",7,"ActiveCD",12
+"Resident Macro.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",17,"ActiveCD",23
+"T Proliferating",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",8,"ActiveCD",22
+"Tuft",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",14,"ActiveCD",11
+"Endo.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",12,"ActiveCD",23
+"Fibro.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",3,"ActiveCD",11
+"Neutrophils",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",2,"ActiveCD",19
+"Recruited Macro.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",2,"ActiveCD",16
+"B Proliferating",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",5,"ActiveCD",10
+"ABCA8+ Fibro.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",2,"ActiveCD",5
+"PDGFRA+ Fibro.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",0,"ActiveCD",8
+"PDPN+ Fibro.",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",0,"ActiveCD",5
+"Plasma Proliferating",NA,NA,NA,"09_TI_LI_ActiveCD_vs_Control","Control",0,"ActiveCD",4
