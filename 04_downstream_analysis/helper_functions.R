@@ -31,17 +31,17 @@ cats = parse_kegg_categories('/home/glennrdx/Documents/Research_Project/scRNAseq
 
 # Find all genes associated with a KEGG pathway
 get_gene_list <- function(identifier, type) {
-  library(org.Mm.eg.db)
+  library(org.Hs.eg.db)
   library(KEGGREST)
   library(AnnotationDbi)
   if (type == "GO") {
-    genes <- AnnotationDbi::select(org.Mm.eg.db, 
+    genes <- AnnotationDbi::select(org.Hs.eg.db, 
                                    keytype = "GOALL", 
                                    keys = identifier, 
                                    columns = c("ENSEMBL", "SYMBOL"))
   } else if (type == "KEGG") {
-    kegg_genes <- gsub("mmu:", "", keggLink("mmu", identifier))
-    genes <- AnnotationDbi::select(org.Mm.eg.db, 
+    kegg_genes <- gsub("hsa:", "", keggLink("hsa", identifier))
+    genes <- AnnotationDbi::select(org.Hs.eg.db, 
                                    keytype = "ENTREZID", 
                                    keys = kegg_genes, 
                                    columns = c("ENSEMBL", "SYMBOL"))

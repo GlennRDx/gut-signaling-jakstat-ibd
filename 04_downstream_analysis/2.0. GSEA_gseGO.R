@@ -6,6 +6,7 @@ library(ggplot2)
 library(ggtext)
 library(scales)
 library(AnnotationDbi)
+library(digest)  # Added for hash-based caching
 
 # Define the base directory for DEG results
 deg_results_dir <- "/home/glennrdx/Documents/gut-signaling-jakstat-ibd/05_results_repository/DGE_Results"
@@ -13,43 +14,37 @@ deg_results_dir <- "/home/glennrdx/Documents/gut-signaling-jakstat-ibd/05_result
 # Cache for gene mappings to avoid repeated database queries
 gene_mapping_cache <- new.env()
 
-# Efficient gene mapping with caching
+# Efficient gene mapping with caching using hash-based keys
 map_genes_cached <- function(gene_symbols) {
+  # Create hash-based cache key to avoid variable name length limits
+  cache_key <- digest(paste(sort(gene_symbols), collapse = "|"), algo = "md5")
+  
   # Check cache first
-  cache_key <- paste(sort(gene_symbols), collapse = "|")
   if (exists(cache_key, envir = gene_mapping_cache)) {
     return(get(cache_key, envir = gene_mapping_cache))
   }
   
-  # Only query unmapped genes
-  unmapped_genes <- setdiff(gene_symbols, names(gene_mapping_cache))
-  if (length(unmapped_genes) > 0) {
-    # Single batch query for all unmapped genes
-    new_mappings <- mapIds(org.Hs.eg.db, keys = unmapped_genes, column = "ENTREZID", 
-                           keytype = "SYMBOL", multiVals = "first")
-    
-    # Cache individual mappings
-    for (i in seq_along(new_mappings)) {
-      assign(names(new_mappings)[i], new_mappings[i], envir = gene_mapping_cache)
-    }
-  }
-  
-  # Retrieve from cache
-  result <- sapply(gene_symbols, function(x) {
-    if (exists(x, envir = gene_mapping_cache)) {
-      get(x, envir = gene_mapping_cache)
-    } else {
-      NA
-    }
-  })
+  # Query all genes (simplified approach - cache individual results)
+  gene_mappings <- mapIds(org.Hs.eg.db, keys = gene_symbols, column = "ENTREZID", 
+                          keytype = "SYMBOL", multiVals = "first")
   
   # Cache the result for this combination
-  assign(cache_key, result, envir = gene_mapping_cache)
-  return(result)
+  assign(cache_key, gene_mappings, envir = gene_mapping_cache)
+  return(gene_mappings)
+}
+
+# Function to convert Entrez IDs back to gene symbols
+entrez_to_symbol <- function(entrez_ids) {
+  entrez_vector <- unlist(strsplit(entrez_ids, "/"))
+  symbols <- mapIds(org.Hs.eg.db, keys = entrez_vector, column = "SYMBOL", 
+                    keytype = "ENTREZID", multiVals = "first")
+  # Remove NAs and return as comma-separated string
+  symbols <- symbols[!is.na(symbols)]
+  return(paste(symbols, collapse = "/"))
 }
 
 # Perform GO enrichment for all ontologies in one batch
-perform_go_enrichment_batch <- function(df, n = 20) {
+perform_go_enrichment_batch <- function(df, n = 50) {
   # Clean data once
   df <- df[!is.na(df$X) & df$X != "" & !is.na(df$log2FoldChange), ]
   if (nrow(df) == 0) return(NULL)
@@ -68,45 +63,13 @@ perform_go_enrichment_batch <- function(df, n = 20) {
   
   geneList <- sort(setNames(mapping_df$log2fc, mapping_df$entrez_id), decreasing = TRUE)
   
-  # Run all ontologies in parallel-style batch
+  # Run all ontologies in batch
   ont_list <- c("BP", "CC", "MF")
-  all_results <- list()
+  result_df <- data.frame()
   
-  # Single compareCluster call for all ontologies (most efficient)
-  tryCatch({
-    # Create a list of gene lists for each ontology (same list, different ont parameter)
-    gene_lists <- setNames(rep(list(geneList), length(ont_list)), ont_list)
-    
-    # Use compareCluster for batch processing
-    compare_result <- compareCluster(
-      geneClusters = gene_lists,
-      fun = "gseGO",
-      OrgDb = org.Hs.eg.db,
-      minGSSize = 10,
-      maxGSSize = 500,
-      pvalueCutoff = 0.05,
-      verbose = FALSE
-    )
-    
-    if (!is.null(compare_result)) {
-      result_df <- as.data.frame(compare_result)
-      if (nrow(result_df) > 0) {
-        # Process results
-        result_df <- result_df %>%
-          rename(ont = Cluster) %>%
-          mutate(direction = ifelse(NES > 0, "Up", "Down")) %>%
-          group_by(ont) %>%
-          arrange(pvalue) %>%
-          slice_head(n = n) %>%
-          ungroup()
-        
-        return(result_df)
-      }
-    }
-  }, error = function(e) {
-    # Fallback to individual ontology processing if batch fails
-    result_df <- data.frame()
-    for (ont in ont_list) {
+  # Process each ontology individually (more reliable than compareCluster)
+  for (ont in ont_list) {
+    tryCatch({
       enrich <- gseGO(geneList = geneList, OrgDb = org.Hs.eg.db, ont = ont, 
                       minGSSize = 10, maxGSSize = 500, pvalueCutoff = 0.05, verbose = FALSE)
       
@@ -116,11 +79,22 @@ perform_go_enrichment_batch <- function(df, n = 20) {
           slice_head(n = n) %>%
           mutate(ont = ont, direction = ifelse(NES > 0, "Up", "Down"))
         
+        # Add gene symbols column
+        if ("core_enrichment" %in% colnames(top_terms)) {
+          cat("Converting Entrez IDs to gene symbols for", ont, "...\n")
+          top_terms$gene_symbols <- sapply(top_terms$core_enrichment, entrez_to_symbol)
+        }
+        
         result_df <- rbind(result_df, top_terms)
       }
-    }
+    }, error = function(e) {
+      cat("Warning: Failed to process ontology", ont, ":", e$message, "\n")
+    })
+  }
+  
+  if (nrow(result_df) > 0) {
     return(result_df)
-  })
+  }
   
   return(NULL)
 }
@@ -192,20 +166,31 @@ plot_go_enrichment_fast <- function(df, title = NULL) {
 run_go_analysis <- function(deg_file, output_dir, title = NULL) {
   if (!file.exists(deg_file)) return(FALSE)
   
+  cat("Processing:", deg_file, "\n")
+  
   # Single file read with column standardization
   df <- read.csv(deg_file, stringsAsFactors = FALSE)
   if (!"X" %in% colnames(df)) {
     if ("gene" %in% colnames(df)) df$X <- df$gene
-    else return(FALSE)
+    else {
+      cat("Warning: No gene column found in", deg_file, "\n")
+      return(FALSE)
+    }
   }
   if (!"log2FoldChange" %in% colnames(df)) {
     if ("logFC" %in% colnames(df)) df$log2FoldChange <- df$logFC
-    else return(FALSE)
+    else {
+      cat("Warning: No log2FoldChange column found in", deg_file, "\n")
+      return(FALSE)
+    }
   }
   
   # Batch enrichment analysis
   results <- perform_go_enrichment_batch(df)
-  if (is.null(results) || nrow(results) == 0) return(FALSE)
+  if (is.null(results) || nrow(results) == 0) {
+    cat("No enrichment results for", deg_file, "\n")
+    return(FALSE)
+  }
   
   # Fast clustering and plotting
   clusters <- cluster_go_terms_fast(results)
@@ -218,13 +203,13 @@ run_go_analysis <- function(deg_file, output_dir, title = NULL) {
     ggsave(file.path(output_dir, "GO_enrichment_plot.pdf"), plot, width = 16, height = 12, limitsize = FALSE)
   }
   
+  cat("Completed:", deg_file, "\n")
   return(TRUE)
 }
 
-# Optimized directory processing with pre-loading
+# Optimized directory processing
 process_all_comparisons <- function(base_dir) {
-  # Pre-warm the gene mapping cache with a common gene set if available
-  cat("Initializing gene mapping cache...\n")
+  cat("Starting GO enrichment analysis...\n")
   
   comparisons <- list.dirs(base_dir, recursive = FALSE, full.names = FALSE)
   success <- 0
@@ -249,9 +234,11 @@ process_all_comparisons <- function(base_dir) {
         for (cell_type in cell_type_dirs) {
           cell_type_path <- file.path(tissue_path, cell_type)
           deg_file <- file.path(cell_type_path, "DEG_results.csv")
-          total <- total + 1
-          title <- paste(cell_type, tissue_dir, comparison, sep = " - ")
-          if (run_go_analysis(deg_file, cell_type_path, title)) success <- success + 1
+          if (file.exists(deg_file)) {
+            total <- total + 1
+            title <- paste(cell_type, tissue_dir, comparison, sep = " - ")
+            if (run_go_analysis(deg_file, cell_type_path, title)) success <- success + 1
+          }
         }
       }
     }
