@@ -1,0 +1,13 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"03_CO_EPI","Colon","EPI","Mature Colonocyte",315,275,590,"ActiveCD_vs_Control","Control",16,"ActiveCD",18,0.394231250930308,0.372,0.734918361662508,-0.159,0.00385446097136781,"**1.504**",NA,"1.103"
+"03_CO_EPI","Colon","EPI","Early Goblet",277,55,332,"ActiveCD_vs_Control","Control",16,"ActiveCD",20,0.340886768955461,0.556,0.924996434110147,-0.079,0.00231299220506251,"**1.612**",NA,"1.152"
+"03_CO_EPI","Colon","EPI","Intermediate Colonocyte",240,70,310,"ActiveCD_vs_Control","Control",16,"ActiveCD",20,0.645390838702915,0.336,0.199628646805538,-0.602,0.00404201169496816,"**1.383**",0.0170198130559949,"**2.168**"
+"03_CO_EPI","Colon","EPI","Stem",202,36,238,"ActiveCD_vs_Control","Control",16,"ActiveCD",20,0.77286054078343,0.309,0.88482770865377,0.153,0.0400993778605542,"**1.419**",0.0114304496243285,"**2.65**"
+"03_CO_EPI","Colon","EPI","Mature Goblet",156,27,183,"ActiveCD_vs_Control","Control",16,"ActiveCD",20,0.923304228046997,0.212,0.97703993324405,0.064,0.0148231391411549,"**1.636**",NA,NA
+"03_CO_EPI","Colon","EPI","Cycling TA",157,23,180,"ActiveCD_vs_Control","Control",15,"ActiveCD",20,0.740322323906351,0.358,0.912704186861483,-0.169,0.010202149502695,"**1.444**",0.00413427722627836,"**3.538**"
+"03_CO_EPI","Colon","EPI","Early Colonocyte",77,13,90,"ActiveCD_vs_Control","Control",15,"ActiveCD",20,NA,0.459,0.603176553549034,-0.465,0.34559619869825,"0.945",NA,NA
+"03_CO_EPI","Colon","EPI","LND",0,51,51,"ActiveCD_vs_Control","Control",3,"ActiveCD",18,0.9516079857236,-0.232,0.845285937414479,0.626,0.808763191373093,"0.821",0.704703652047366,"-1.283"
+"03_CO_EPI","Colon","EPI","BEST4/OTOP2",NA,NA,NA,"ActiveCD_vs_Control","Control",16,"ActiveCD",18,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_EPI","Colon","EPI","EEC",NA,NA,NA,"ActiveCD_vs_Control","Control",12,"ActiveCD",17,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_EPI","Colon","EPI","Goblet Proliferating",NA,NA,NA,"ActiveCD_vs_Control","Control",14,"ActiveCD",19,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_EPI","Colon","EPI","Tuft",NA,NA,NA,"ActiveCD_vs_Control","Control",15,"ActiveCD",16,NA,NA,NA,NA,NA,NA,NA,NA

@@ -1,0 +1,17 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"02_IL_STR","Ileum","STR","Fibroblasts ADAMDEC1",17,9,26,"ActiveCD_vs_Control","Control",8,"ActiveCD",12,0.999538433502601,-0.112,0.999538433502601,0.651,0.0210283243515475,"**1.379**",0.999538433502601,-0.18
+"02_IL_STR","Ileum","STR","Activated fibroblasts CCL19 ADAMADEC1",1,0,1,"ActiveCD_vs_Control","Control",5,"ActiveCD",9,0.998776876782592,0.927,NA,NA,0.998776876782592,"1.562",0.998776876782592,-0.431
+"02_IL_STR","Ileum","STR","Endothelial cells CA4 CD36",0,0,0,"ActiveCD_vs_Control","Control",7,"ActiveCD",12,0.999688413878327,-0.13,NA,NA,0.999688413878327,"0.708",0.999688413878327,2.116
+"02_IL_STR","Ileum","STR","Endothelial cells CD36",0,0,0,"ActiveCD_vs_Control","Control",7,"ActiveCD",12,0.999498268737081,0.525,0.999498268737081,0.059,0.999498268737081,"1.16",0.999498268737081,0.504
+"02_IL_STR","Ileum","STR","Endothelial cells DARC",0,0,0,"ActiveCD_vs_Control","Control",7,"ActiveCD",12,0.999979708829671,0.307,0.999979708829671,-0.588,0.999979708829671,"0.61",0.999979708829671,-0.011
+"02_IL_STR","Ileum","STR","Lymphatics",0,0,0,"ActiveCD_vs_Control","Control",4,"ActiveCD",10,0.999923216113378,-0.468,NA,NA,0.999923216113378,"2.635",NA,NA
+"02_IL_STR","Ileum","STR","Fibroblasts SMOC2 PTGIS",0,0,0,"ActiveCD_vs_Control","Control",6,"ActiveCD",11,0.999721005544229,-0.323,NA,NA,0.92842887721353,"1.767",0.999721005544229,1.61
+"02_IL_STR","Ileum","STR","Endothelial cells LTC4S SEMA3G",NA,NA,NA,"ActiveCD_vs_Control","Control",6,"ActiveCD",11,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_STR","Ileum","STR","Myofibroblasts GREM1 GREM2",NA,NA,NA,"ActiveCD_vs_Control","Control",5,"ActiveCD",10,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_STR","Ileum","STR","Pericytes HIGD1B STEAP4",NA,NA,NA,"ActiveCD_vs_Control","Control",6,"ActiveCD",11,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_STR","Ileum","STR","Fibroblasts KCNN3 LY6H",NA,NA,NA,"ActiveCD_vs_Control","Control",4,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_STR","Ileum","STR","Fibroblasts NPY SLITRK6",NA,NA,NA,"ActiveCD_vs_Control","Control",5,"ActiveCD",11,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_STR","Ileum","STR","Fibroblasts SFRP2 SLPI",NA,NA,NA,"ActiveCD_vs_Control","Control",4,"ActiveCD",8,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_STR","Ileum","STR","Glial cells",NA,NA,NA,"ActiveCD_vs_Control","Control",6,"ActiveCD",7,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_STR","Ileum","STR","Myofibroblasts HHIP NPNT",NA,NA,NA,"ActiveCD_vs_Control","Control",6,"ActiveCD",11,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_STR","Ileum","STR","Pericytes RERGL NTRK2",NA,NA,NA,"ActiveCD_vs_Control","Control",5,"ActiveCD",6,NA,NA,NA,NA,NA,NA,NA,NA

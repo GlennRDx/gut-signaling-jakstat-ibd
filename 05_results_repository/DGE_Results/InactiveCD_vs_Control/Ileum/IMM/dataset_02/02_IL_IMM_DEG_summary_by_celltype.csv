@@ -1,0 +1,29 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"02_IL_IMM","Ileum","IMM","T cells CD8",6,62,68,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.77653308423862,-0.086,NA,-0.459,0.804659320691869,0.19,0.0605153684932946,-0.67
+"02_IL_IMM","Ileum","IMM","IELs ID3 ENTPD1",0,43,43,"InactiveCD_vs_Control","Control",10,"InactiveCD",25,0.975258823626534,-0.02,NA,-0.492,0.85279629441312,-0.209,0.266778717096804,-0.71
+"02_IL_IMM","Ileum","IMM","T cells CD4 IL17A",11,16,27,"InactiveCD_vs_Control","Control",10,"InactiveCD",25,0.598692330874261,0.158,NA,-0.377,0.608080480315616,0.335,0.215881830507645,-0.509
+"02_IL_IMM","Ileum","IMM","T cells CD4 FOSB",2,6,8,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.992167679410502,0.005,NA,-0.311,0.60741112668237,0.418,0.165603580550743,-0.61
+"02_IL_IMM","Ileum","IMM","Plasma cells",2,4,6,"InactiveCD_vs_Control","Control",8,"InactiveCD",26,0.992668597659067,-0.065,0.983984665697613,0.28,0.986328775598873,0.239,0.99877451590981,-0.005
+"02_IL_IMM","Ileum","IMM","T cells CD8 KLRG1",0,6,6,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.855505903992361,0.184,NA,-0.016,0.851336413645874,0.361,0.700472857969729,-0.454
+"02_IL_IMM","Ileum","IMM","DC1",0,4,4,"InactiveCD_vs_Control","Control",8,"InactiveCD",26,0.90119571379624,-0.14,NA,-0.919,0.511308443002525,-0.737,NA,NA
+"02_IL_IMM","Ileum","IMM","Cycling cells",1,2,3,"InactiveCD_vs_Control","Control",9,"InactiveCD",26,0.805039910043918,0.213,NA,-0.222,0.292868645096048,1.118,0.186008848174531,-1.302
+"02_IL_IMM","Ileum","IMM","ILCs",2,1,3,"InactiveCD_vs_Control","Control",9,"InactiveCD",25,0.982492413482393,-0.092,NA,NA,0.981201825168038,-0.163,0.799995303481683,-0.574
+"02_IL_IMM","Ileum","IMM","Macrophages CCL3 CCL4",1,1,2,"InactiveCD_vs_Control","Control",9,"InactiveCD",26,0.977423845212447,-0.092,0.996543589207048,0.059,0.983673691385234,0.203,0.977423845212447,-0.914
+"02_IL_IMM","Ileum","IMM","B cells",0,0,0,"InactiveCD_vs_Control","Control",7,"InactiveCD",26,0.999428437028881,-0.083,0.999428437028881,0.459,0.999428437028881,0.808,0.999428437028881,-0.43
+"02_IL_IMM","Ileum","IMM","DC2 CD1D",0,0,0,"InactiveCD_vs_Control","Control",7,"InactiveCD",26,0.997140661326369,-0.132,0.997140661326369,0.194,0.997140661326369,0.671,0.997140661326369,-1.099
+"02_IL_IMM","Ileum","IMM","DC2 CD1D-",0,0,0,"InactiveCD_vs_Control","Control",8,"InactiveCD",26,0.992851594512077,-0.343,NA,NA,0.984220466838964,0.859,NA,NA
+"02_IL_IMM","Ileum","IMM","Macrophages",0,0,0,"InactiveCD_vs_Control","Control",8,"InactiveCD",26,0.995730208716773,-0.456,0.995730208716773,-0.46,0.995730208716773,0.808,NA,NA
+"02_IL_IMM","Ileum","IMM","Macrophages LYVE1",0,0,0,"InactiveCD_vs_Control","Control",7,"InactiveCD",26,0.676248635085987,0.647,0.924614294596861,0.395,0.833751661565022,0.931,NA,NA
+"02_IL_IMM","Ileum","IMM","Mast cells",0,0,0,"InactiveCD_vs_Control","Control",7,"InactiveCD",26,0.835798359159359,0.481,NA,NA,0.817917836653067,0.578,0.833160403968224,0.457
+"02_IL_IMM","Ileum","IMM","Monocytes S100A8 S100A9",0,0,0,"InactiveCD_vs_Control","Control",6,"InactiveCD",26,0.997598527361376,0.186,0.997598527361376,0.473,0.997598527361376,0.146,NA,NA
+"02_IL_IMM","Ileum","IMM","NK cells KLRF1 CD3G-",0,0,0,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.984369916342256,-0.064,NA,NA,0.980135857261709,-0.154,0.775682489427655,-0.756
+"02_IL_IMM","Ileum","IMM","T cells Naive CD4",0,0,0,"InactiveCD_vs_Control","Control",10,"InactiveCD",25,0.998231378707501,0.141,NA,NA,0.82775988861744,0.882,0.886501356855756,-0.709
+"02_IL_IMM","Ileum","IMM","T cells OGT",0,0,0,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.991130892451021,0.025,NA,NA,0.899873046432084,0.638,0.934214945490177,0.263
+"02_IL_IMM","Ileum","IMM","Tregs",0,0,0,"InactiveCD_vs_Control","Control",9,"InactiveCD",26,0.999863801402276,0.146,0.999863801402276,-0.198,0.999863801402276,0.852,0.999863801402276,-0.703
+"02_IL_IMM","Ileum","IMM","Macrophages CXCL9 CXCL10",NA,NA,NA,"InactiveCD_vs_Control","Control",4,"InactiveCD",26,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_IMM","Ileum","IMM","Macrophages PLA2G2D",NA,NA,NA,"InactiveCD_vs_Control","Control",6,"InactiveCD",24,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_IMM","Ileum","IMM","Mature DCs",NA,NA,NA,"InactiveCD_vs_Control","Control",7,"InactiveCD",26,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_IMM","Ileum","IMM","Monocytes HBB",NA,NA,NA,"InactiveCD_vs_Control","Control",2,"InactiveCD",12,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_IMM","Ileum","IMM","Neutrophils S100A8 S100A9",NA,NA,NA,"InactiveCD_vs_Control","Control",0,"InactiveCD",3,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_IMM","Ileum","IMM","B cells AICDA LRMP",NA,NA,NA,"InactiveCD_vs_Control","Control",7,"InactiveCD",22,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_IMM","Ileum","IMM","Monocytes CHI3L1 CYP27A1",NA,NA,NA,"InactiveCD_vs_Control","Control",5,"InactiveCD",9,NA,NA,NA,NA,NA,NA,NA,NA

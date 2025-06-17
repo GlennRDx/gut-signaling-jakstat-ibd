@@ -1,0 +1,6 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"03_IL_STR","Ileum","STR","Endo.",NA,NA,NA,"ActiveCD_vs_Control","Control",12,"ActiveCD",23,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_STR","Ileum","STR","Fibro.",NA,NA,NA,"ActiveCD_vs_Control","Control",3,"ActiveCD",11,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_STR","Ileum","STR","ABCA8+ Fibro.",NA,NA,NA,"ActiveCD_vs_Control","Control",2,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_STR","Ileum","STR","PDGFRA+ Fibro.",NA,NA,NA,"ActiveCD_vs_Control","Control",0,"ActiveCD",8,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_STR","Ileum","STR","PDPN+ Fibro.",NA,NA,NA,"ActiveCD_vs_Control","Control",0,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA

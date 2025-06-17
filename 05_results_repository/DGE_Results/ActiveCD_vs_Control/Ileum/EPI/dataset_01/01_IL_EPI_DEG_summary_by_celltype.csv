@@ -1,0 +1,11 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"01_IL_EPI","Ileum","EPI","Goblet cell",59,105,164,"ActiveCD_vs_Control","Control",8,"ActiveCD",5,0.905679516384231,0.145,NA,NA,0.667043939714069,"0.698",0.983981483862214,0.072
+"01_IL_EPI","Ileum","EPI","early enterocyte",62,99,161,"ActiveCD_vs_Control","Control",8,"ActiveCD",4,0.88411597139379,0.262,NA,NA,0.10270939519838,"1.274",0.602376088667688,0.884
+"01_IL_EPI","Ileum","EPI","IL2RG+ enterocyte (M cell)",100,55,155,"ActiveCD_vs_Control","Control",8,"ActiveCD",4,0.0942409570413651,1.137,0.569751357317434,1.144,0.00296837199474703,"**2.08**",0.436301719998822,-0.952
+"01_IL_EPI","Ileum","EPI","crypt",64,49,113,"ActiveCD_vs_Control","Control",8,"ActiveCD",5,0.777064915123376,0.289,0.785030599165199,0.82,0.277989987234847,"0.956",0.788146836647004,-0.544
+"01_IL_EPI","Ileum","EPI","enterocyte",60,25,85,"ActiveCD_vs_Control","Control",8,"ActiveCD",3,0.94377498157166,0.137,0.95872530448556,0.278,0.266732366869029,"0.954",0.586941261261119,-1.183
+"01_IL_EPI","Ileum","EPI","TA",32,43,75,"ActiveCD_vs_Control","Control",8,"ActiveCD",5,0.787122784448183,0.45,0.800901567075901,1.034,0.910219190962908,"0.387",0.945987320492596,0.508
+"01_IL_EPI","Ileum","EPI","Paneth cell",2,0,2,"ActiveCD_vs_Control","Control",8,"ActiveCD",4,NA,0.054,NA,NA,NA,"0.591",NA,NA
+"01_IL_EPI","Ileum","EPI","BEST4 enterocyte",0,0,0,"ActiveCD_vs_Control","Control",7,"ActiveCD",4,0.999907345954711,0.299,NA,NA,0.999907345954711,"-0.938",NA,NA
+"01_IL_EPI","Ileum","EPI","enteroendocrine",NA,NA,NA,"ActiveCD_vs_Control","Control",8,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"01_IL_EPI","Ileum","EPI","Tuft",NA,NA,NA,"ActiveCD_vs_Control","Control",8,"ActiveCD",2,NA,NA,NA,NA,NA,NA,NA,NA

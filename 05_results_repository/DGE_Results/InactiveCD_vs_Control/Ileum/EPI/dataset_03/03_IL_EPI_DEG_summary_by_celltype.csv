@@ -1,0 +1,14 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"03_IL_EPI","Ileum","EPI","Intermediate Enterocyte",25,3,28,"InactiveCD_vs_Control","Control",17,"InactiveCD",32,0.901032735098337,-0.208,0.94169225208478,0.202,0.901032735098337,0.218,0.895430021216276,0.548
+"03_IL_EPI","Ileum","EPI","Early Enterocyte",18,5,23,"InactiveCD_vs_Control","Control",17,"InactiveCD",32,0.976947547172992,-0.067,0.970726925260826,0.125,0.516282478428268,0.4,NA,NA
+"03_IL_EPI","Ileum","EPI","Mature Enterocyte",18,2,20,"InactiveCD_vs_Control","Control",17,"InactiveCD",32,0.999909935701104,0,0.997030535237795,0.194,0.9987069072815,-0.011,NA,0.669
+"03_IL_EPI","Ileum","EPI","Cycling TA",7,4,11,"InactiveCD_vs_Control","Control",17,"InactiveCD",32,0.996938813237423,-0.12,0.996938813237423,0.058,0.996938813237423,0.221,NA,NA
+"03_IL_EPI","Ileum","EPI","Mature Goblet",7,0,7,"InactiveCD_vs_Control","Control",17,"InactiveCD",31,0.998105638011376,-0.035,0.998105638011376,-0.032,0.958128145838183,-0.224,NA,NA
+"03_IL_EPI","Ileum","EPI","Early Goblet",3,1,4,"InactiveCD_vs_Control","Control",17,"InactiveCD",32,NA,-0.157,0.995020463326743,0.263,NA,0.198,NA,NA
+"03_IL_EPI","Ileum","EPI","Stem",1,0,1,"InactiveCD_vs_Control","Control",17,"InactiveCD",32,0.993322029008174,-0.241,0.993322029008174,0.194,0.993322029008174,0.261,NA,NA
+"03_IL_EPI","Ileum","EPI","BEST4/OTOP2",NA,NA,NA,"InactiveCD_vs_Control","Control",17,"InactiveCD",31,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_EPI","Ileum","EPI","EEC",NA,NA,NA,"InactiveCD_vs_Control","Control",17,"InactiveCD",29,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_EPI","Ileum","EPI","Goblet Proliferating",NA,NA,NA,"InactiveCD_vs_Control","Control",16,"InactiveCD",32,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_EPI","Ileum","EPI","LND",NA,NA,NA,"InactiveCD_vs_Control","Control",9,"InactiveCD",26,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_EPI","Ileum","EPI","Paneth",NA,NA,NA,"InactiveCD_vs_Control","Control",7,"InactiveCD",19,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_EPI","Ileum","EPI","Tuft",NA,NA,NA,"InactiveCD_vs_Control","Control",14,"InactiveCD",29,NA,NA,NA,NA,NA,NA,NA,NA

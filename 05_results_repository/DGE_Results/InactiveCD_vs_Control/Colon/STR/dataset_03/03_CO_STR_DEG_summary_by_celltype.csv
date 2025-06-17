@@ -1,0 +1,6 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"03_CO_STR","Colon","STR","Endo.",NA,NA,NA,"InactiveCD_vs_Control","Control",6,"InactiveCD",22,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_STR","Colon","STR","Fibro.",NA,NA,NA,"InactiveCD_vs_Control","Control",7,"InactiveCD",16,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_STR","Colon","STR","ABCA8+ Fibro.",NA,NA,NA,"InactiveCD_vs_Control","Control",2,"InactiveCD",7,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_STR","Colon","STR","PDGFRA+ Fibro.",NA,NA,NA,"InactiveCD_vs_Control","Control",1,"InactiveCD",6,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_STR","Colon","STR","PDPN+ Fibro.",NA,NA,NA,"InactiveCD_vs_Control","Control",0,"InactiveCD",1,NA,NA,NA,NA,NA,NA,NA,NA

@@ -1,0 +1,14 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"03_IL_EPI","Ileum","EPI","LND",155,2149,2304,"ActiveCD_vs_Control","Control",9,"ActiveCD",24,0.0286713177631914,"**-1.339**",0.367336010463769,0.576,0.0622039853438784,"1.236",0.6421464349105,"0.534"
+"03_IL_EPI","Ileum","EPI","Early Enterocyte",691,824,1515,"ActiveCD_vs_Control","Control",17,"ActiveCD",24,0.571538391333905,"-0.203",0.979284718015172,-0.011,1.08603395615475e-12,"**1.64**",NA,NA
+"03_IL_EPI","Ileum","EPI","Cycling TA",630,542,1172,"ActiveCD_vs_Control","Control",17,"ActiveCD",24,0.991521289632712,"-0.006",0.92056581442075,0.058,1.57754717031837e-09,"**1.485**",0.000149891501613805,"**2.583**"
+"03_IL_EPI","Ileum","EPI","Intermediate Enterocyte",492,627,1119,"ActiveCD_vs_Control","Control",17,"ActiveCD",24,0.244100889364422,"-0.372",0.435978247696848,0.276,2.12534271904081e-08,"**1.355**",NA,NA
+"03_IL_EPI","Ileum","EPI","Mature Goblet",262,547,809,"ActiveCD_vs_Control","Control",17,"ActiveCD",24,0.905105013697068,"0.072",0.716111674125876,0.14,0.0152534120380242,"**0.804**",9.65923156137146e-05,"**2.679**"
+"03_IL_EPI","Ileum","EPI","Mature Enterocyte",416,389,805,"ActiveCD_vs_Control","Control",17,"ActiveCD",22,0.909333261883823,"0.059",0.992754962822331,0.006,7.84352687286216e-05,"**1.177**",0.0170849745246655,"**1.769**"
+"03_IL_EPI","Ileum","EPI","Early Goblet",500,277,777,"ActiveCD_vs_Control","Control",17,"ActiveCD",24,0.771036607640377,"0.148",0.598978083523925,0.251,0.000443417429227016,"**1.356**",0.361676290468462,"1.004"
+"03_IL_EPI","Ileum","EPI","Stem",218,121,339,"ActiveCD_vs_Control","Control",17,"ActiveCD",23,0.700832286759142,"-0.305",0.976225491176236,0.036,1.02741018238924e-06,"**1.903**",NA,NA
+"03_IL_EPI","Ileum","EPI","Goblet Proliferating",137,102,239,"ActiveCD_vs_Control","Control",16,"ActiveCD",24,0.887294980203195,"0.17",0.640100368053504,0.374,0.0713450693082836,"0.976",NA,NA
+"03_IL_EPI","Ileum","EPI","EEC",25,40,65,"ActiveCD_vs_Control","Control",17,"ActiveCD",21,0.886171240750177,"-0.211",0.576016501575254,-0.606,0.0619792505353543,"1.375",NA,NA
+"03_IL_EPI","Ileum","EPI","BEST4/OTOP2",NA,NA,NA,"ActiveCD_vs_Control","Control",17,"ActiveCD",13,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_EPI","Ileum","EPI","Paneth",NA,NA,NA,"ActiveCD_vs_Control","Control",7,"ActiveCD",12,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_EPI","Ileum","EPI","Tuft",NA,NA,NA,"ActiveCD_vs_Control","Control",14,"ActiveCD",11,NA,NA,NA,NA,NA,NA,NA,NA

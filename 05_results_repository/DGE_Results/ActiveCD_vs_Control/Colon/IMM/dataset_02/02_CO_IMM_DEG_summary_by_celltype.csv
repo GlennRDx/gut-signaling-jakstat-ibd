@@ -1,0 +1,26 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"02_CO_IMM","Colon","IMM","Plasma cells",3908,657,4565,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,2.25290497824631e-05,"**0.989**",0.000165336624397983,"**1.791**",0.00992917237856489,"**1.702**",0.341129585593735,"-0.406"
+"02_CO_IMM","Colon","IMM","T cells CD4 FOSB",2169,261,2430,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,2.77613867145583e-06,"**1.339**",NA,NA,0.00741617490713028,"**1.612**",0.069535698687694,"-0.719"
+"02_CO_IMM","Colon","IMM","DC2 CD1D",1488,362,1850,"ActiveCD_vs_Control","Control",14,"ActiveCD",5,0.125820100954409,"0.748",0.0226272878597441,"**2.165**",0.00336013208702107,"**2.89**",0.111845853127758,"1.145"
+"02_CO_IMM","Colon","IMM","T cells Naive CD4",1486,286,1772,"ActiveCD_vs_Control","Control",14,"ActiveCD",5,7.3423063173055e-05,"**1.292**",NA,NA,0.0329735024129549,"**1.439**",0.187792472265867,"-0.578"
+"02_CO_IMM","Colon","IMM","Tregs",1331,171,1502,"ActiveCD_vs_Control","Control",14,"ActiveCD",5,9.09833398587168e-06,"**1.569**",0.202189447983636,"2.349",0.0995619763132271,"1.072",0.157930587133356,"-0.603"
+"02_CO_IMM","Colon","IMM","Monocytes S100A8 S100A9",1371,54,1425,"ActiveCD_vs_Control","Control",14,"ActiveCD",5,0.00159532213398153,"**2.013**",0.0252691876968019,"**2.529**",0.00485829934414135,"**2.919**",0.796761763725462,"0.29"
+"02_CO_IMM","Colon","IMM","Immune Cycling cells",1144,228,1372,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,4.03596627047478e-05,"**1.622**",0.2844193475533,"1.224",0.0675322702501349,"1.899",0.434810776666228,"0.57"
+"02_CO_IMM","Colon","IMM","T cells CD8 KLRG1",1144,171,1315,"ActiveCD_vs_Control","Control",14,"ActiveCD",5,8.09412910834344e-07,"**1.538**",NA,NA,0.0377253003652059,"**1.569**",0.0765544945586267,"-0.728"
+"02_CO_IMM","Colon","IMM","T cells CD4 IL17A",970,178,1148,"ActiveCD_vs_Control","Control",14,"ActiveCD",5,6.00338875395098e-05,"**1.489**",NA,NA,0.0531809427571375,"1.617",0.34155369332485,"-0.511"
+"02_CO_IMM","Colon","IMM","NK-like cells ID3 ENTPD1",891,141,1032,"ActiveCD_vs_Control","Control",14,"ActiveCD",5,0.00321983257250675,"**1.04**",NA,NA,0.278442294260051,"1.21",0.200744023333728,"-0.634"
+"02_CO_IMM","Colon","IMM","Macrophages CCL3 CCL4",802,103,905,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.00899523960957234,"**1.827**",0.0586665824710028,"2.647",0.0486755163126921,"**2.767**",0.243925417503133,"1.36"
+"02_CO_IMM","Colon","IMM","Macrophages LYVE1",763,57,820,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.00230732516527941,"**1.911**",0.00185968956586478,"**3.129**",0.0146574941308204,"**2.806**",0.732014414869309,"-0.456"
+"02_CO_IMM","Colon","IMM","B cells",649,30,679,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.0107460392785194,"**1.083**",NA,"2.4",0.013606302855317,"**2.54**",0.374676348997841,"0.678"
+"02_CO_IMM","Colon","IMM","T cells CD8",440,90,530,"ActiveCD_vs_Control","Control",14,"ActiveCD",5,0.00868557387520512,"**0.918**",NA,NA,0.303723131898976,"0.956",0.0431904369712193,"**-0.761**"
+"02_CO_IMM","Colon","IMM","Mast cells",424,25,449,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.00942680254596028,"**1.78**",NA,NA,0.00472931789978535,"**2.259**",0.185764427635784,"1.079"
+"02_CO_IMM","Colon","IMM","Macrophages Metallothionein",340,7,347,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.0367788490308415,"**1.956**",NA,NA,0.21110377257358,"2.313",NA,NA
+"02_CO_IMM","Colon","IMM","NK cells KLRF1 CD3G-",202,39,241,"ActiveCD_vs_Control","Control",14,"ActiveCD",5,0.00949384990718674,"**1.191**",NA,NA,0.230993776951401,"1.299",0.175863963049248,"-0.642"
+"02_CO_IMM","Colon","IMM","DC1",NA,NA,NA,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"02_CO_IMM","Colon","IMM","DC2 CD1D-",NA,NA,NA,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"02_CO_IMM","Colon","IMM","ILCs",NA,NA,NA,"ActiveCD_vs_Control","Control",14,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"02_CO_IMM","Colon","IMM","Macrophages",NA,NA,NA,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"02_CO_IMM","Colon","IMM","Mature DCs",NA,NA,NA,"ActiveCD_vs_Control","Control",11,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"02_CO_IMM","Colon","IMM","T cells OGT",NA,NA,NA,"ActiveCD_vs_Control","Control",6,"ActiveCD",4,NA,NA,NA,NA,NA,NA,NA,NA
+"02_CO_IMM","Colon","IMM","B cells AICDA LRMP",NA,NA,NA,"ActiveCD_vs_Control","Control",7,"ActiveCD",4,NA,NA,NA,NA,NA,NA,NA,NA
+"02_CO_IMM","Colon","IMM","Monocytes CHI3L1 CYP27A1",NA,NA,NA,"ActiveCD_vs_Control","Control",5,"ActiveCD",2,NA,NA,NA,NA,NA,NA,NA,NA

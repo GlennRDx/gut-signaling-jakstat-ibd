@@ -1,0 +1,12 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"03_IL_IMM","Ileum","IMM","T",0,2,2,"InactiveCD_vs_Control","Control",17,"InactiveCD",32,0.995308281966452,0.149,0.995308281966452,-0.38,0.995308281966452,0.402,0.995308281966452,0.04
+"03_IL_IMM","Ileum","IMM","B",NA,NA,NA,"InactiveCD_vs_Control","Control",10,"InactiveCD",24,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_IMM","Ileum","IMM","Mast",NA,NA,NA,"InactiveCD_vs_Control","Control",5,"InactiveCD",19,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_IMM","Ileum","IMM","NK",NA,NA,NA,"InactiveCD_vs_Control","Control",17,"InactiveCD",31,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_IMM","Ileum","IMM","Resident Macro.",NA,NA,NA,"InactiveCD_vs_Control","Control",17,"InactiveCD",29,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_IMM","Ileum","IMM","T Proliferating",NA,NA,NA,"InactiveCD_vs_Control","Control",8,"InactiveCD",18,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_IMM","Ileum","IMM","Neutrophils",NA,NA,NA,"InactiveCD_vs_Control","Control",2,"InactiveCD",1,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_IMM","Ileum","IMM","Plasma",NA,NA,NA,"InactiveCD_vs_Control","Control",8,"InactiveCD",23,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_IMM","Ileum","IMM","Recruited Macro.",NA,NA,NA,"InactiveCD_vs_Control","Control",2,"InactiveCD",2,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_IMM","Ileum","IMM","B Proliferating",NA,NA,NA,"InactiveCD_vs_Control","Control",5,"InactiveCD",9,NA,NA,NA,NA,NA,NA,NA,NA
+"03_IL_IMM","Ileum","IMM","Plasma Proliferating",NA,NA,NA,"InactiveCD_vs_Control","Control",0,"InactiveCD",1,NA,NA,NA,NA,NA,NA,NA,NA

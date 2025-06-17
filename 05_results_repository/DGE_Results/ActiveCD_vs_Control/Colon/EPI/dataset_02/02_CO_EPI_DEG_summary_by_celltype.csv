@@ -1,0 +1,14 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"02_CO_EPI","Colon","EPI","Enterocytes CA1 CA2 CA4-",1883,1476,3359,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,3.63746935065707e-05,"**1.575**",8.39810340872107e-05,"**2.592**",1.62674383834765e-05,"**2.267**",0.000132057477992293,"**2.048**"
+"02_CO_EPI","Colon","EPI","Epithelial Cycling cells",1511,1127,2638,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,5.55800069387633e-08,"**1.748**",0.0479392613724265,"**1.695**",0.000184936807071808,"**2.282**",1.44631709581924e-05,"**2.574**"
+"02_CO_EPI","Colon","EPI","Goblet cells MUC2 TFF1-",1438,1064,2502,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.0190937543624276,"**0.894**",0.0132677597217741,"**2.082**",0.00116214429395622,"**2.04**",0.0343503364511361,"**1.356**"
+"02_CO_EPI","Colon","EPI","Enterocytes TMIGD1 MEP1A",1035,680,1715,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.00160521594608473,"**1.38**",0.00202679961138959,"**3.187**",0.00584212873416103,"**2.103**",0.410055712686017,"0.769"
+"02_CO_EPI","Colon","EPI","Stem cells OLFM4 PCNA",763,632,1395,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.000932567390446178,"**1.474**",NA,NA,3.25842259190901e-05,"**2.28**",0.0112087175676962,"**2.286**"
+"02_CO_EPI","Colon","EPI","Stem cells OLFM4 LGR5",657,513,1170,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.000357327229108009,"**1.445**",0.0108268842824298,"**2.671**",6.65992052038226e-05,"**2.315**",0.0179394452996913,"**2.031**"
+"02_CO_EPI","Colon","EPI","Enterocytes BEST4",431,127,558,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.0059964905362707,"**1.683**",NA,NA,0.00760875989501046,"**2.344**",NA,"1.629"
+"02_CO_EPI","Colon","EPI","Goblet cells MUC2 TFF1",247,53,300,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.0304953841668057,"**1.4**",NA,NA,0.000777000684010172,"**2.986**",NA,NA
+"02_CO_EPI","Colon","EPI","Enteroendocrine cells",251,18,269,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,NA,NA,NA,NA,0.014229081541068,"**3.091**",NA,"1.903"
+"02_CO_EPI","Colon","EPI","Stem cells OLFM4",135,97,232,"ActiveCD_vs_Control","Control",16,"ActiveCD",5,0.07162005413803,"1.822",NA,NA,0.000936545558173975,"**2.698**",NA,NA
+"02_CO_EPI","Colon","EPI","Goblet cells SPINK4",NA,NA,NA,"ActiveCD_vs_Control","Control",15,"ActiveCD",4,NA,NA,NA,NA,NA,NA,NA,NA
+"02_CO_EPI","Colon","EPI","Paneth cells",NA,NA,NA,"ActiveCD_vs_Control","Control",3,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA
+"02_CO_EPI","Colon","EPI","Tuft cells",NA,NA,NA,"ActiveCD_vs_Control","Control",15,"ActiveCD",5,NA,NA,NA,NA,NA,NA,NA,NA

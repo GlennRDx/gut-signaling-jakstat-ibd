@@ -1,0 +1,11 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"03_CO_IMM","Colon","IMM","B",NA,NA,NA,"InactiveCD_vs_Control","Control",11,"InactiveCD",33,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_IMM","Colon","IMM","B Proliferating",NA,NA,NA,"InactiveCD_vs_Control","Control",8,"InactiveCD",23,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_IMM","Colon","IMM","NK",NA,NA,NA,"InactiveCD_vs_Control","Control",14,"InactiveCD",37,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_IMM","Colon","IMM","Plasma",NA,NA,NA,"InactiveCD_vs_Control","Control",12,"InactiveCD",33,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_IMM","Colon","IMM","Resident Macro.",NA,NA,NA,"InactiveCD_vs_Control","Control",10,"InactiveCD",27,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_IMM","Colon","IMM","T",NA,NA,NA,"InactiveCD_vs_Control","Control",13,"InactiveCD",38,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_IMM","Colon","IMM","T Proliferating",NA,NA,NA,"InactiveCD_vs_Control","Control",0,"InactiveCD",17,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_IMM","Colon","IMM","Mast",NA,NA,NA,"InactiveCD_vs_Control","Control",8,"InactiveCD",33,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_IMM","Colon","IMM","Neutrophils",NA,NA,NA,"InactiveCD_vs_Control","Control",2,"InactiveCD",10,NA,NA,NA,NA,NA,NA,NA,NA
+"03_CO_IMM","Colon","IMM","Recruited Macro.",NA,NA,NA,"InactiveCD_vs_Control","Control",4,"InactiveCD",20,NA,NA,NA,NA,NA,NA,NA,NA

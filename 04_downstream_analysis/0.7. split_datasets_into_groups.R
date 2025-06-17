@@ -1,7 +1,9 @@
 library(Seurat)
 
 # 1. Set your input directory
-rds_files <- list.files(path = "/home/glennrdx/Documents/gut-signaling-jakstat-ibd/06_data_repository/00_rds_datasets/", pattern = "\\.rds$", full.names = TRUE)
+# rds_files <- list.files(path = "/home/glennrdx/Documents/gut-signaling-jakstat-ibd/06_data_repository/00_rds_datasets/", pattern = "\\.rds$", full.names = TRUE)
+rds_files <- list.files(path = "/home/glennrdx/Documents/gut-signaling-jakstat-ibd/06_data_repository/00_rds_datasets_norm/", pattern = "\\.rds$", full.names = TRUE)
+
 
 # 2. Create an in-memory mapping (not saved to disk)
 celltype_map <- list()

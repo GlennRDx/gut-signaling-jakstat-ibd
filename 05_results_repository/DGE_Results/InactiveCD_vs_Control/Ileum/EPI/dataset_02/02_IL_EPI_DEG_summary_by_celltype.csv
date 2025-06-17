@@ -1,0 +1,18 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"02_IL_EPI","Ileum","EPI","Enterocytes TMIGD1 MEP1A",206,68,274,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.559527288702241,0.177,0.241309668782417,0.418,0.280817051736634,0.57,0.831584462717538,0.201
+"02_IL_EPI","Ileum","EPI","Paneth cells",6,75,81,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.974256109140924,-0.028,NA,NA,0.843673183657536,-0.189,0.81168774293447,-0.268
+"02_IL_EPI","Ileum","EPI","Goblet cells MUC2 TFF1",25,24,49,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.693920000516448,0.161,0.123759408165926,0.863,0.69537756848912,0.332,0.627358334349469,-0.536
+"02_IL_EPI","Ileum","EPI","Stem cells OLFM4 PCNA",9,19,28,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.785009880282361,-0.231,NA,-0.191,0.957963406322616,0.13,NA,-0.522
+"02_IL_EPI","Ileum","EPI","Goblet cells MUC2 TFF1-",5,13,18,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.965167603282432,-0.076,NA,0.27,0.911287742016207,0.204,NA,-0.063
+"02_IL_EPI","Ileum","EPI","Stem cells OLFM4 LGR5",6,9,15,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.705849860131525,-0.215,0.903201335889447,0.3,0.903201335889447,0.218,0.819726833116566,-0.46
+"02_IL_EPI","Ileum","EPI","L cells",3,5,8,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.997180446580725,-0.011,NA,NA,NA,0.168,NA,-1.177
+"02_IL_EPI","Ileum","EPI","Enterocytes TMIGD1 MEP1A GSTA1",6,1,7,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,NA,0.138,NA,NA,NA,0.776,NA,NA
+"02_IL_EPI","Ileum","EPI","Stem cells OLFM4 GSTA1",6,1,7,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.99896809968617,-0.156,NA,0.297,0.99896809968617,0.246,NA,-0.028
+"02_IL_EPI","Ileum","EPI","Tuft cells",0,6,6,"InactiveCD_vs_Control","Control",10,"InactiveCD",25,0.984950828095344,0.313,NA,NA,0.984950828095344,0.224,NA,NA
+"02_IL_EPI","Ileum","EPI","Enterocytes BEST4",0,4,4,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.998966171932641,0.046,0.998966171932641,0.645,0.998966171932641,0.464,NA,NA
+"02_IL_EPI","Ileum","EPI","Epithelial Cycling cells",2,2,4,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.985849197654295,-0.042,0.935547408864863,-0.261,0.859012893539658,0.238,0.9845223117879,-0.146
+"02_IL_EPI","Ileum","EPI","Stem cells OLFM4",0,4,4,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,0.965326880676543,-0.382,0.990657848506389,-0.279,0.990657848506389,0.431,0.990657848506389,-0.427
+"02_IL_EPI","Ileum","EPI","Enterochromaffin cells",0,2,2,"InactiveCD_vs_Control","Control",9,"InactiveCD",24,NA,-0.214,NA,NA,NA,0.236,NA,-0.472
+"02_IL_EPI","Ileum","EPI","Epithelial cells METTL12 MAFB",0,1,1,"InactiveCD_vs_Control","Control",10,"InactiveCD",26,NA,NA,NA,NA,0.996283052181601,0.592,0.996283052181601,-0.943
+"02_IL_EPI","Ileum","EPI","Epithelial HBB HBA",NA,NA,NA,"InactiveCD_vs_Control","Control",6,"InactiveCD",18,NA,NA,NA,NA,NA,NA,NA,NA
+"02_IL_EPI","Ileum","EPI","Goblet cells SPINK4",NA,NA,NA,"InactiveCD_vs_Control","Control",9,"InactiveCD",26,NA,NA,NA,NA,NA,NA,NA,NA

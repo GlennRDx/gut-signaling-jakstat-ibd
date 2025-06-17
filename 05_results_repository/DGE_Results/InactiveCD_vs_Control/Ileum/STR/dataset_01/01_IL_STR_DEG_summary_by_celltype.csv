@@ -1,0 +1,10 @@
+"dataset","location","cellgroup","cell_type","upregulated","downregulated","total_significant","comparison","condition1","condition1_sample_count","condition2","condition2_sample_count","JAK1_padj","JAK1_log2FC","JAK2_padj","JAK2_log2FC","STAT1_padj","STAT1_log2FC","SOCS1_padj","SOCS1_log2FC"
+"01_IL_STR","Ileum","STR","S1 fibroblasts",7,0,7,"InactiveCD_vs_Control","Control",8,"InactiveCD",2,0.999886711586924,0.286,NA,NA,0.999886711586924,0.633,0.999886711586924,-0.852
+"01_IL_STR","Ileum","STR","S4 fibroblasts",2,5,7,"InactiveCD_vs_Control","Control",8,"InactiveCD",2,0.994434582032846,-0.122,NA,NA,0.659062595919037,1.619,0.842500609748303,1.454
+"01_IL_STR","Ileum","STR","Arterial endothelial cell",2,0,2,"InactiveCD_vs_Control","Control",8,"InactiveCD",2,0.999984846617869,0.157,NA,NA,0.999984846617869,0.945,NA,NA
+"01_IL_STR","Ileum","STR","S2 fibroblasts",0,0,0,"InactiveCD_vs_Control","Control",8,"InactiveCD",2,0.999338885372678,-0.228,NA,NA,0.999338885372678,0.273,NA,NA
+"01_IL_STR","Ileum","STR","Lymphatic endothelial cell",NA,NA,NA,"InactiveCD_vs_Control","Control",7,"InactiveCD",2,NA,NA,NA,NA,NA,NA,NA,NA
+"01_IL_STR","Ileum","STR","myofibroblast",NA,NA,NA,"InactiveCD_vs_Control","Control",8,"InactiveCD",2,NA,NA,NA,NA,NA,NA,NA,NA
+"01_IL_STR","Ileum","STR","pericyte",NA,NA,NA,"InactiveCD_vs_Control","Control",7,"InactiveCD",2,NA,NA,NA,NA,NA,NA,NA,NA
+"01_IL_STR","Ileum","STR","Venous endothelial cell",NA,NA,NA,"InactiveCD_vs_Control","Control",8,"InactiveCD",2,NA,NA,NA,NA,NA,NA,NA,NA
+"01_IL_STR","Ileum","STR","Glial cell",NA,NA,NA,"InactiveCD_vs_Control","Control",6,"InactiveCD",1,NA,NA,NA,NA,NA,NA,NA,NA
