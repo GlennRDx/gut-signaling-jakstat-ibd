@@ -1,14 +1,15 @@
-# Batch processing script for all RDS datasets - FINAL VERSION with Overwrite System
-# Output: Three PNG files per dataset
+# Batch processing script for all RDS datasets - FINAL VERSION with New Directory Structure
+# Output: Three PNG files per dataset organized by plot type
 library(Seurat)
 library(ggplot2)
 library(dplyr)
 library(tidyr)
 library(patchwork)
+library(viridis)  # Added for magma color scale
 
 # Paths
 data_path <- '/home/glennrossdolan/Documents/gut-signaling-jakstat-ibd/06_data_repository/00_rds_datasets_norm/'
-output_base <- '/home/glennrossdolan/Documents/gut-signaling-jakstat-ibd/05_results_repository/plots/'
+output_base <- '/home/glennrossdolan/Documents/gut-signaling-jakstat-ibd/05_results_repository/plots/dot_feature_hexbin/'
 dge_base <- '/home/glennrossdolan/Documents/gut-signaling-jakstat-ibd/05_results_repository/DGE_Results/'
 features <- c('SOCS1', 'STAT1', 'JAK1', 'JAK2')
 
@@ -31,15 +32,47 @@ parse_dataset_info <- function(dataset_name) {
   return(list(id = id, location_code = location_code, location_full = location_full, cellgroup = cellgroup))
 }
 
+# Function to create all necessary output directories
+create_output_directories <- function(dataset_info) {
+  # Create directories for both comparisons and all plot types
+  comparisons <- c("ActiveCD_vs_Control", "InactiveCD_vs_Control")
+  plot_types <- c("dotplot", "featureplot", "hexbin")
+  
+  dirs <- list()
+  
+  for(comparison in comparisons) {
+    for(plot_type in plot_types) {
+      dir_path <- file.path(output_base, comparison, dataset_info$location_full, dataset_info$cellgroup, plot_type)
+      dir.create(dir_path, recursive = TRUE, showWarnings = FALSE)
+      dirs[[paste(comparison, plot_type, sep = "_")]] <- dir_path
+    }
+  }
+  
+  return(dirs)
+}
+
 # Function to check if plot files exist and handle overwrite decision
-check_and_handle_existing_plots <- function(plot_output_dir, dataset_name) {
-  # Define expected output files
-  umap_filename <- file.path(plot_output_dir, paste0(dataset_name, "_umap_features.png"))
-  hex_filename <- file.path(plot_output_dir, paste0(dataset_name, "_umap_hexbin.png"))
-  dotplot_filename <- file.path(plot_output_dir, paste0(dataset_name, "_dotplot.png"))
+check_and_handle_existing_plots <- function(output_dirs, dataset_name) {
+  # Check all possible output files across all directories
+  files_to_check <- c()
+  
+  # Add all possible filenames
+  for(dir_name in names(output_dirs)) {
+    dir_path <- output_dirs[[dir_name]]
+    
+    if(grepl("featureplot", dir_name)) {
+      files_to_check <- c(files_to_check, file.path(dir_path, paste0(dataset_name, "_umap_features.png")))
+    } else if(grepl("hexbin", dir_name)) {
+      files_to_check <- c(files_to_check, file.path(dir_path, paste0(dataset_name, "_umap_hexbin.png")))
+    } else if(grepl("dotplot", dir_name)) {
+      files_to_check <- c(files_to_check, file.path(dir_path, paste0(dataset_name, "_dotplot.png")))
+    }
+  }
   
   # Check if any plot files already exist
-  if (file.exists(umap_filename) || file.exists(hex_filename) || file.exists(dotplot_filename)) {
+  existing_files <- files_to_check[file.exists(files_to_check)]
+  
+  if (length(existing_files) > 0) {
     # If overwrite choice hasn't been made yet, prompt user
     if (is.null(overwrite_choice)) {
       cat("Plot results already exist. Overwrite existing plots? (Y/N): ")
@@ -156,12 +189,11 @@ for(i in seq_along(rds_files)) {
   # Parse dataset information
   dataset_info <- parse_dataset_info(dataset_name)
   
-  # Create output directory structure for plots
-  plot_output_dir <- file.path(output_base, "ActiveCD_vs_Control", dataset_info$location_full, dataset_info$cellgroup)
-  dir.create(plot_output_dir, recursive = TRUE, showWarnings = FALSE)
+  # Create all output directories
+  output_dirs <- create_output_directories(dataset_info)
   
   # Check if plots exist and handle overwrite decision
-  if (!check_and_handle_existing_plots(plot_output_dir, dataset_name)) {
+  if (!check_and_handle_existing_plots(output_dirs, dataset_name)) {
     next  # Skip this dataset
   }
   
@@ -172,9 +204,6 @@ for(i in seq_along(rds_files)) {
   
   tryCatch({
     seurat_obj <- readRDS(rds_files[i])
-    
-    # Set working directory
-    setwd(plot_output_dir)
     
     # UMAP and Feature Plots (Combined)
     seurat_obj$CD_Status <- factor(seurat_obj$CD_Status, levels = c("Control", "InactiveCD", "ActiveCD"))
@@ -197,7 +226,7 @@ for(i in seq_along(rds_files)) {
       coord_fixed() +
       guides(color = guide_legend(ncol = 1, override.aes = list(size = 4, shape = 15)))
     
-    # Feature plots
+    # Feature plots with magma color gradient
     feature_plots <- list()
     for(feature in features) {
       tryCatch({
@@ -217,7 +246,7 @@ for(i in seq_along(rds_files)) {
       
       p <- ggplot(plot_data, aes(x = UMAP_1, y = UMAP_2, color = .data[[feature]])) +
         geom_point(size = 0.1, alpha = 0.4) +
-        scale_color_gradientn(colors = c("grey", "#DC267F"), name = feature, limits = c(0, 2)) +
+        scale_color_viridis_c(option = "magma", name = feature, limits = c(0, 2)) +
         facet_wrap(~ CD_Status, nrow = 1) +
         theme_void() +
         theme(strip.text = element_text(size = 10), legend.position = "right",
@@ -229,12 +258,17 @@ for(i in seq_along(rds_files)) {
     
     full_plot <- wrap_plots(c(list(umap_plot), feature_plots), ncol = 1, heights = c(1.2, rep(1, length(features))))
     
-    # Save with new naming convention
-    umap_filename <- paste0(dataset_name, "_umap_features.png")
-    ggsave(umap_filename, plot = full_plot, width = 14, height = 3 + 3 * length(features), units = "in")
+    # Save feature plots to both ActiveCD_vs_Control and InactiveCD_vs_Control directories
+    for(comparison in c("ActiveCD_vs_Control", "InactiveCD_vs_Control")) {
+      feature_dir <- output_dirs[[paste(comparison, "featureplot", sep = "_")]]
+      setwd(feature_dir)
+      umap_filename <- paste0(dataset_name, "_umap_features.png")
+      ggsave(umap_filename, plot = full_plot, width = 14, height = 3 + 3 * length(features), units = "in")
+    }
+    
     rm(umap_plot, feature_plots, full_plot)
     
-    # Hexagonal binning feature plots
+    # Hexagonal binning feature plots with magma color gradient
     hex_plots <- list()
     for(feature in features) {
       # Ensure feature data is available in plot_data
@@ -257,7 +291,7 @@ for(i in seq_along(rds_files)) {
       
       p_hex <- ggplot(plot_data, aes(x = UMAP_1, y = UMAP_2, z = .data[[feature]])) +
         stat_summary_hex(bins = 50, fun = mean, alpha = 0.8) +
-        scale_fill_gradientn(colors = c("grey", "#DC267F"), name = feature, limits = c(0, 2)) +
+        scale_fill_viridis_c(option = "magma", name = feature, limits = c(0, 2)) +
         facet_wrap(~ CD_Status, nrow = 1) +
         theme_void() +
         theme(strip.text = element_text(size = 10), 
@@ -286,82 +320,99 @@ for(i in seq_along(rds_files)) {
     
     full_hex_plot <- wrap_plots(c(list(umap_plot_hex), hex_plots), ncol = 1, heights = c(1.2, rep(1, length(features))))
     
-    # Save hexbin version
-    hex_filename <- paste0(dataset_name, "_umap_hexbin.png")
-    ggsave(hex_filename, plot = full_hex_plot, width = 14, height = 3 + 3 * length(features), units = "in")
+    # Save hexbin plots to both ActiveCD_vs_Control and InactiveCD_vs_Control directories
+    for(comparison in c("ActiveCD_vs_Control", "InactiveCD_vs_Control")) {
+      hexbin_dir <- output_dirs[[paste(comparison, "hexbin", sep = "_")]]
+      setwd(hexbin_dir)
+      hex_filename <- paste0(dataset_name, "_umap_hexbin.png")
+      ggsave(hex_filename, plot = full_hex_plot, width = 14, height = 3 + 3 * length(features), units = "in")
+    }
+    
     rm(umap_plot_hex, hex_plots, full_hex_plot)
     
-    # Dotplot
+    # Generate dotplots for each comparison separately
     dge_results <- read_dge_results(dataset_name)
     all_vars <- c(features, "Celltypes", "CD_Status")
     gene_data <- FetchData(seurat_obj, vars = all_vars)
-    plot_data <- gene_data %>%
-      pivot_longer(cols = all_of(features), names_to = "Gene", values_to = "Expression") %>%
-      group_by(Gene, Celltypes, CD_Status) %>%
-      summarise(avg_exp = mean(Expression), 
-                pct_exp = sum(Expression > 0) / n() * 100, 
-                .groups = 'drop')
-    rm(gene_data); gc(verbose = FALSE)
-    plot_data$CD_Status <- factor(plot_data$CD_Status, levels = c("Control", "InactiveCD", "ActiveCD"))
-    plot_data$Gene <- factor(plot_data$Gene, levels = features)
-    plot_data$log2fc_text <- ""
-    plot_data$is_significant <- FALSE
     
-    if(nrow(dge_results) > 0) {
-      for(idx in 1:nrow(plot_data)) {
-        gene <- as.character(plot_data$Gene[idx])
-        celltype <- as.character(plot_data$Celltypes[idx])
-        cd_status <- as.character(plot_data$CD_Status[idx])
-        if(cd_status %in% c("InactiveCD", "ActiveCD")) {
-          dge_info <- extract_significant_log2fc(dge_results, gene, celltype, cd_status)
-          if(!is.null(dge_info) && is.list(dge_info) && !is.na(dge_info$value) && dge_info$significant) {
-            plot_data$log2fc_text[idx] <- paste0(round(dge_info$value, 2), "")
-            plot_data$is_significant[idx] <- TRUE
+    for(comparison in c("ActiveCD_vs_Control", "InactiveCD_vs_Control")) {
+      # Prepare plot data for this comparison
+      plot_data_comp <- gene_data %>%
+        pivot_longer(cols = all_of(features), names_to = "Gene", values_to = "Expression") %>%
+        group_by(Gene, Celltypes, CD_Status) %>%
+        summarise(avg_exp = mean(Expression), 
+                  pct_exp = sum(Expression > 0) / n() * 100, 
+                  .groups = 'drop')
+      
+      plot_data_comp$CD_Status <- factor(plot_data_comp$CD_Status, levels = c("Control", "InactiveCD", "ActiveCD"))
+      plot_data_comp$Gene <- factor(plot_data_comp$Gene, levels = features)
+      plot_data_comp$log2fc_text <- ""
+      plot_data_comp$is_significant <- FALSE
+      
+      # Add DGE information for the current comparison
+      comparison_type <- ifelse(comparison == "ActiveCD_vs_Control", "ActiveCD", "InactiveCD")
+      
+      if(nrow(dge_results) > 0) {
+        for(idx in 1:nrow(plot_data_comp)) {
+          gene <- as.character(plot_data_comp$Gene[idx])
+          celltype <- as.character(plot_data_comp$Celltypes[idx])
+          cd_status <- as.character(plot_data_comp$CD_Status[idx])
+          
+          if(cd_status == comparison_type) {
+            dge_info <- extract_significant_log2fc(dge_results, gene, celltype, comparison_type)
+            if(!is.null(dge_info) && is.list(dge_info) && !is.na(dge_info$value) && dge_info$significant) {
+              plot_data_comp$log2fc_text[idx] <- paste0(round(dge_info$value, 2), "")
+              plot_data_comp$is_significant[idx] <- TRUE
+            }
           }
         }
       }
-    }
-    
-    max_avg_exp <- max(plot_data$avg_exp, na.rm = TRUE)
-    max_pct_exp <- max(plot_data$pct_exp, na.rm = TRUE)
-    n_cd_status <- length(levels(plot_data$CD_Status))
-    n_genes <- length(features)
-    
-    p <- ggplot(plot_data, aes(x = interaction(CD_Status, Gene), y = Celltypes)) +
-      geom_point(aes(size = pct_exp, color = avg_exp)) +
-      geom_text(aes(label = ifelse(is_significant, log2fc_text, "")), size = 2.5, color = "white", fontface = "bold") +
-      scale_color_gradient(low = "lightgrey", high = "blue", name = "Average\nExpression", limits = c(0, max_avg_exp)) +
-      scale_size_continuous(range = c(0.5, 8), name = "% Cells\nExpressed", limits = c(0, max_pct_exp)) +
-      scale_x_discrete(labels = rep(levels(plot_data$CD_Status), n_genes)) +
-      theme_minimal() +
-      labs(title = paste("Gene Expression Profile with DGE -", dataset_name), x = "", y = "Cell Types",
-           caption = "White text shows significant log2FC values") +
-      theme(plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
-            axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1, size = 10),
-            axis.text.y = element_text(size = 10),
-            legend.position = "right",
-            legend.title = element_text(size = 10), legend.text = element_text(size = 9)) +
-      coord_cartesian(clip = "off")
-    
-    for(j in seq_along(features)) {
-      if(j %% 2 == 1) {
-        x_start <- (j - 1) * n_cd_status + 0.5
-        x_end <- j * n_cd_status + 0.5
-        p <- p + annotate("rect", xmin = x_start, xmax = x_end, ymin = -Inf, ymax = Inf, fill = "grey95", alpha = 0.3)
+      
+      max_avg_exp <- max(plot_data_comp$avg_exp, na.rm = TRUE)
+      max_pct_exp <- max(plot_data_comp$pct_exp, na.rm = TRUE)
+      n_cd_status <- length(levels(plot_data_comp$CD_Status))
+      n_genes <- length(features)
+      
+      p <- ggplot(plot_data_comp, aes(x = interaction(CD_Status, Gene), y = Celltypes)) +
+        geom_point(aes(size = pct_exp, color = avg_exp)) +
+        geom_text(aes(label = ifelse(is_significant, log2fc_text, "")), size = 2.5, color = "white", fontface = "bold") +
+        scale_color_viridis_c(option = "magma", name = "Average\nExpression", limits = c(0, max_avg_exp)) +
+        scale_size_continuous(range = c(0.5, 8), name = "% Cells\nExpressed", limits = c(0, max_pct_exp)) +
+        scale_x_discrete(labels = rep(levels(plot_data_comp$CD_Status), n_genes)) +
+        theme_minimal() +
+        labs(title = paste("Gene Expression Profile -", comparison, "-", dataset_name), 
+             x = "", y = "Cell Types",
+             caption = "White text shows significant log2FC values") +
+        theme(plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
+              axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1, size = 10),
+              axis.text.y = element_text(size = 10),
+              legend.position = "right",
+              legend.title = element_text(size = 10), legend.text = element_text(size = 9)) +
+        coord_cartesian(clip = "off")
+      
+      for(j in seq_along(features)) {
+        if(j %% 2 == 1) {
+          x_start <- (j - 1) * n_cd_status + 0.5
+          x_end <- j * n_cd_status + 0.5
+          p <- p + annotate("rect", xmin = x_start, xmax = x_end, ymin = -Inf, ymax = Inf, fill = "grey95", alpha = 0.3)
+        }
       }
+      
+      p <- p +
+        geom_point(aes(size = pct_exp, color = avg_exp)) +
+        geom_text(aes(label = ifelse(is_significant, log2fc_text, "")), size = 3.5, color = "black", vjust = 0.5, hjust = 0.5)
+      
+      gene_label_positions <- sapply(seq_along(features), function(j) mean(((j-1) * n_cd_status + 1):(j * n_cd_status)))
+      p <- p + annotate("text", x = gene_label_positions, y = Inf, label = features, vjust = -0.5, size = 4, fontface = "bold")
+      
+      # Save dotplot to the appropriate directory
+      dotplot_dir <- output_dirs[[paste(comparison, "dotplot", sep = "_")]]
+      setwd(dotplot_dir)
+      dotplot_filename <- paste0(dataset_name, "_dotplot.png")
+      ggsave(dotplot_filename, plot = p, width = 16, height = 12, units = "in", dpi = 300, bg = "white")
     }
     
-    p <- p +
-      geom_point(aes(size = pct_exp, color = avg_exp)) +
-      geom_text(aes(label = ifelse(is_significant, log2fc_text, "")), size = 3.5, color = "black", vjust = 0.5, hjust = 0.5)
-    
-    gene_label_positions <- sapply(seq_along(features), function(j) mean(((j-1) * n_cd_status + 1):(j * n_cd_status)))
-    p <- p + annotate("text", x = gene_label_positions, y = Inf, label = features, vjust = -0.5, size = 4, fontface = "bold")
-    
-    # Save with new naming convention
-    dotplot_filename <- paste0(dataset_name, "_dotplot.png")
-    ggsave(dotplot_filename, plot = p, width = 16, height = 12, units = "in", dpi = 300, bg = "white")
-    rm(plot_data, p, dge_results)
+    rm(gene_data, dge_results)
     
     success <- success + 1
     cat("Completed:", dataset_name, "\n")
@@ -372,7 +423,3 @@ for(i in seq_along(rds_files)) {
   
   gc(verbose = FALSE)
 }
-
-rm(seurat_obj)
-gc(verbose = FALSE)
-cat("Plot generation completed:", success, "of", total, "datasets successful\n")

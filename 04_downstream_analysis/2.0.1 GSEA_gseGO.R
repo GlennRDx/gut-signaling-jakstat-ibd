@@ -9,7 +9,7 @@ library(AnnotationDbi)
 library(digest)  # Added for hash-based caching
 
 # Define the base directory for DEG results
-deg_results_dir <- "/home/glennrdx/Documents/gut-signaling-jakstat-ibd/05_results_repository/DGE_Results"
+deg_results_dir <- "/home/glennrossdolan/Documents/gut-signaling-jakstat-ibd/05_results_repository/DGE_Results"
 
 # Cache for gene mappings to avoid repeated database queries
 gene_mapping_cache <- new.env()
