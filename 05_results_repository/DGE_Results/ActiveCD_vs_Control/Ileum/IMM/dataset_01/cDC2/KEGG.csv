@@ -1,0 +1,2 @@
+"ID","Description","setSize","enrichmentScore","NES","pvalue","p.adjust","qvalue","rank","leading_edge","core_enrichment","direction","cell_type","cell_group","tissue","comparison","dataset"
+"hsa03320","PPAR signaling pathway",16,-0.734734972126374,-1.95853592894382,0.000174327557837071,0.0449765099219643,0.0449765099219643,371,"tags=50%, list=12%, signal=44%","6342/7316/123/2169/2168/335/345/2172","Down","cDC2","IMM","Ileum","ActiveCD_vs_Control","dataset_01"
